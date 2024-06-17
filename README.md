@@ -92,7 +92,7 @@ Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **
 
 #### Tipo de Imóveis
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
-|--|--|--|--|--|--|--|--|--
+|--|--|--|--|--|--|--|--|--|--
 |ALINHAMENTO|3418|31282|5313|5713|3725|2231|8504|3241|4264
 |APART HOTEL|0|624|6|116|42|4|4|241|0
 |APART HOTEL (FRACAO=1)|0|0|0|0|0|0|0|172|0
