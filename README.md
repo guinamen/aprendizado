@@ -91,7 +91,7 @@ Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **
 |TERRITORIAL|3282|2932|2177|4100|2145|2775|3745|6676|3268
 
 #### Tipo de Imóveis
-|Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
+||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
 |--|--|--|--|--|--|--|--|--
 |ALINHAMENTO|3418|31282|5313|5713|3725|2231|8504|3241|4264
 |APART HOTEL|0|624|6|116|42|4|4|241|0
