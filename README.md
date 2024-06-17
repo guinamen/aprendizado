@@ -37,24 +37,24 @@ Geometria| GEOMETRIA| Polígono| Polígono do terreno
 
 ## Fazes
 
-1. Coleta de Dados​
-    1. Coleta de dados no Portal de Dados Abertos da PBH.​
-    2. Armazenagem dos dados em um banco de dados.​
-    3. Normalização dos dados.​
-    4. Ajustar dados faltantes.​
-2. Fazer análise dos dados.​
-3. Gerar arquivos no formato do SPMF.​
-4. Testar os algoritmos.​
-5. Responder as perguntas.
+1. - [x] Coleta de Dados​
+    1. - [x] Coleta de dados no Portal de Dados Abertos da PBH.​
+    2. - [x] Armazenagem dos dados em um banco de dados.​
+    3. - [x] Normalização dos dados.​
+    4. - [x] Ajustar dados faltantes.​
+2. - [ ] Fazer análise dos dados.​
+3. - [ ] Gerar arquivos no formato do SPMF.​
+4. - [ ] Testar os algoritmos.​
+5. - [ ] Responder as perguntas.
 
 ### Coleta de Dados​
-1. Extraídos os arquivos de imóveis das regionais no Portal de Dados abertos da PBH.​
-    * As colunas com dados nulos foram corrigidas:​
+- [x] Extraídos os arquivos de imóveis das regionais no Portal de Dados abertos da PBH.​
+    - [x] As colunas com dados nulos foram corrigidas:​
        * Área Construída. Lotes vagos que estavam nulos foram alterados para 0.​
        * Meio Fio, Pavimentação e Iluminação. Foram alterados por fotos de satélite do Google Maps.​
        * Áreas de construção e de terreno nulas foram substituídas pela média da vizinhança.​
-    * Colunas não referentes ás características do imóvel foram removidas.​
-    * Removido um registro sem nenhum dado de endereço.​
-    * Removidos registro referentes a endereços fora de Belo Horizonte.​
+    - [x] Colunas não referentes ás características do imóvel foram removidas.​
+    - [x] Removido um registro sem nenhum dado de endereço.​
+    - [x] Removidos registro referentes a endereços fora de Belo Horizonte.​
 
 ​
