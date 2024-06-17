@@ -38,7 +38,7 @@ Geometria| GEOMETRIA| Polígono| Polígono do terreno
 ## Fazes
 
 1. - [x] Coleta de Dados​
-    1. - [x] Coleta de dados no Portal de Dados Abertos da PBH.​
+    1. - [x] Coleta de dados no ​[Portal de Dados abertos da PBH](https://ckan.pbh.gov.br/).
     2. - [x] Armazenagem dos dados em um banco de dados.​
     3. - [x] Normalização dos dados.​
     4. - [x] Ajustar dados faltantes.​
@@ -48,7 +48,9 @@ Geometria| GEOMETRIA| Polígono| Polígono do terreno
 5. - [ ] Responder as perguntas.
 
 ### Coleta de Dados​
-- [x] Extraídos os arquivos de imóveis das regionais no Portal de Dados abertos da PBH.​
+- [x] Extraídos os arquivos de imóveis das regionais no ​[Portal de Dados abertos da PBH](https://ckan.pbh.gov.br/).
+    - [x] Extraídos os dados do Cadastro Imobiliário da Secretaria Municipal de Fazenda (SMFA)
+    - [X] Dados de cada regional da carga de 03/06/2024 
     - [x] As colunas com dados nulos foram corrigidas:​
        * Área Construída. Lotes vagos que estavam nulos foram alterados para 0.​
        * Meio Fio, Pavimentação e Iluminação. Foram alterados por fotos de satélite do Google Maps.​
