@@ -61,6 +61,9 @@ Geometria| GEOMETRIA| Polígono| Polígono do terreno
 - [x] Resutaldo: Banco de dados SQLite 
 
 ### Análise
+
+#### Características dos Imóveis
+
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
 |--|--|--|--|--|--|--|--|--|--
 |APARTAMENTO|19755| 112012| 31344| 38793| 35116| 18536| 77194| 55735| 20434
