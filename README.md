@@ -63,13 +63,13 @@ Geometria| GEOMETRIA| Polígono| Polígono do terreno
 ### Análise
 #### Total de Registros
 Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **Total**
---|--|--|--|--|--|--|--|--
+--|--|--|--|--|--|--|--|--|--
 65390|220991|67561|87187|81741|51240|124864|108035|69808| **876817**
 
 #### Características dos Imóveis
 
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
-|--|--|--|--|--|--|--|--|--|--|--
+|--|--|--|--|--|--|--|--|--|--
 |APARTAMENTO|19755| 112012| 31344| 38793| 35116| 18536| 77194| 55735| 20434
 |APARTAMENTO COM OCUPACAO NAO RESIDENCIAL|2| 2511| 11| 506| 259| 0| 698| 373| 2
 |BARRACAO|2179| 303| 2306| 2593| 2101| 1860| 1605| 1650| 2442
