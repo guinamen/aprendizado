@@ -61,6 +61,19 @@ Geometria| GEOMETRIA| Polígono| Polígono do terreno
 - [x] Resutaldo: Banco de dados SQLite 
 
 ### Análise
+#### Regionais
+REGIONAL|População (2010)|Área (km²) (2018-presente)|Densidade (hab./km²)|Nº de bairros
+--|--|--|--|--
+Barreiro|282.156|53,6|5.156|73
+Centro-Sul|282.286|31,85|9.280|49
+Leste|228.986|27,98|8.334|47
+Nordeste|281.507|39,46|7.333|69
+Noroeste|271.143|30,17|8.907|52
+Norte|214.967|32,67|6.509|48
+Oeste|316.908|36,06|8.785|67
+Pampulha|266.859|51,21|4.848|63
+Venda Nova|230.339|29,27|8.997|44
+
 #### Total de Registros
 Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **Total**
 --|--|--|--|--|--|--|--|--|--
