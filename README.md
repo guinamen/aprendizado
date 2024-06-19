@@ -162,3 +162,4 @@ Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **
 |P5|32|24627|129|542|298|38|4904|1730|42
 
 ![alt Perfil da Coleta de Lixo por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/coleta.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/perfil.png)
