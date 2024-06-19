@@ -22,8 +22,10 @@ ler_banco_dados <- function(arquivo) {
   imoveis$IND_REDE_AGUA <- ifelse(imoveis$IND_REDE_AGUA == 'SIM', TRUE, FALSE)
   imoveis$IND_REDE_TELEFONICA <- ifelse(imoveis$IND_REDE_TELEFONICA == 'SIM', TRUE, FALSE)
   
-  imoveis$REGIONAL <- as.factor(imoveis$REGIONAL)
-  imoveis$FREQUENCIA_COLETA <- as.factor(imoveis$FREQUENCIA_COLETA)
+  #Regionais são ordenadas pelo total da população da menor Norte até a maior Oeste
+  imoveis$REGIONAL <- factor(imoveis$REGIONAL, ordered = TRUE, levels = c("Norte","Leste","Venda Nova","Pampulha","Noroeste","Nordeste","Barreiro","Centro-Sul","Oeste"))
+  
+  imoveis$FREQUENCIA_COLETA <- factor(imoveis$FREQUENCIA_COLETA, ordered = TRUE, levels = c("SEM COLETA", "COLETA ALTERNADA", "COLETA DIARIA"))
   imoveis$TIPO_CONSTRUTIVO <- as.factor(imoveis$TIPO_CONSTRUTIVO)
   imoveis$TIPO_OCUPACAO <- as.factor(imoveis$TIPO_OCUPACAO)
   imoveis$PADRAO_ACABAMENTO <- factor(imoveis$PADRAO_ACABAMENTO, ordered = TRUE, levels = c("TE", "P1", "P2", "P3", "P4", "P5"))
@@ -33,3 +35,54 @@ ler_banco_dados <- function(arquivo) {
 }
 
 tabela <- ler_banco_dados("imobiliario.db")
+
+p <- tabela %>% 
+  group_by(REGIONAL, FREQUENCIA_COLETA) %>%
+  summarise(Total=n()) %>%
+  ggplot(aes(fill=FREQUENCIA_COLETA, x=REGIONAL, y=Total)) +
+  geom_bar(position="fill", stat="identity") +
+  labs(x = "Regional",
+       y="Porcentagem",
+       title = "Coleta de lixo dos imóveis",
+       subtitle = "Porcentagem por Regional",
+       caption = "Fonte: Portal de Dados Abertos da PBH",
+       tag="Figura 1",
+       fill = NULL) +
+  theme(legend.position="top", axis.text.y = element_blank(), axis.ticks.y = element_blank() )
+png("coleta.png", width = 1029, height = 551,type='cairo')
+print(p)
+dev.off()
+
+p <- tabela %>% 
+  group_by(REGIONAL, TIPO_CONSTRUTIVO) %>%
+  summarise(Total=n()) %>%
+  ggplot(aes(fill=TIPO_CONSTRUTIVO, x=REGIONAL, y=Total)) +
+  geom_bar(position="fill", stat="identity") +
+  labs(x = "Regional",
+       y="Porcentagem",
+       title = "Perfil dos imóveis",
+       subtitle = "Porcentagem por Regional",
+       caption = "Fonte: Portal de Dados Abertos da PBH",
+       tag="Figura 2",
+       fill = NULL) +
+  theme(legend.position="top", axis.text.y = element_blank(), axis.ticks.y = element_blank() )
+png("perfil.png", width = 1029, height = 551,type='cairo')
+print(p)
+dev.off()
+
+p <- tabela %>% 
+  group_by(REGIONAL, TIPO_OCUPACAO) %>%
+  summarise(Total=n()) %>%
+  ggplot(aes(fill=TIPO_OCUPACAO, x=REGIONAL, y=Total)) +
+  geom_bar(position="fill", stat="identity") +
+  labs(x = "Regional",
+       y="Porcentagem",
+       title = "Perfil da ocupação",
+       subtitle = "Porcentagem por Regional",
+       caption = "Fonte: Portal de Dados Abertos da PBH",
+       tag="Figura 3",
+       fill = NULL) +
+  theme(legend.position="top", axis.text.y = element_blank(), axis.ticks.y = element_blank() )
+png("ocupacao.png", width = 1029, height = 551,type='cairo')
+print(p)
+dev.off()
