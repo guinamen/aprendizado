@@ -6,8 +6,8 @@
     2. - [x] Armazenagem dos dados em um banco de dados.​
     3. - [x] Normalização dos dados.​
     4. - [x] Ajustar dados faltantes.​
-2. - [ ] Fazer análise dos dados.​
-3. - [ ] Gerar arquivos no formato do SPMF.​
+2. - [X] Fazer análise dos dados.​
+3. - [X] Gerar arquivos no formato do SPMF.​
 4. - [ ] Testar os algoritmos.​
 5. - [ ] Responder as perguntas.
 
