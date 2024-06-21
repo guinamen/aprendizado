@@ -1,4 +1,11 @@
 # Análise
+
+## Distribuição da Área Construída. 
+
+Ao analisar a área construída dos imóveis, foi constado que, ela varia muito em função dos tipos de imóveis. Sendo observado a existência de muitos valores fora do padrão (outliers). Sendo assim, uma nova dimensão binária foi adicionada aos dados, classificando-os em outliers caso estejam fora do intervalo I definido abaixo. Sendo IQR o valor interquartil e qn o valor do enésimo quartil.
+I=[q0.25−1.5⋅IQR; q0.75+1.5⋅IQR] 
+
+I=[q0.25−1.5⋅IQR; q0.75+1.5⋅IQR] 
 ## Regionais
 REGIONAL|População (2010)|Área (km²) (2018-presente)|Densidade (hab./km²)|Nº de bairros
 --|--|--|--|--
