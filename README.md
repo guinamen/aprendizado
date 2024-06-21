@@ -23,3 +23,6 @@
     - [x] Removido um registro sem nenhum dado de endereço.​
     - [x] Removidos registro referentes a endereços fora de Belo Horizonte.​
 - [x] Resutaldo: Banco de dados SQLite 
+
+## ![alt Metodologia GQM](https://raw.githubusercontent.com/guinamen/aprendizado/main/gqm.md)
+## ![alt Metodologia GQM](https://raw.githubusercontent.com/guinamen/aprendizado/main/analise.md)
