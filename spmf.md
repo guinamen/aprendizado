@@ -4,7 +4,7 @@ Transações
 
 Para analisar o espaço urbano de Belo Horizonte através dos algoritmos de mineração de itemsets frequentes, inicialmente deve-se escolher uma forma de agrupar os itens em transações. Para esse estudo foi utilizado o agrupador do CEP, que é o código postal dos Correios do Brasil. Ele é utilizado para facilitar o encaminhamento e a entrega das correspondências aos destinatários. O código está relacionado indiretamente pelo uso e ocupação do espaço urbano, pois quanto mais correspondências um local possui, mais o logradouro terá CEPs distintos. Por exemplo, condomínios muito grandes possuem um código próprio. Ele também possui a vantagem de estar relacionado ao bairro, pois grandes avenidas ou ruas podem estar em bairros diferentes e sendo assim possuem códigos distintos para cada bairro. 
 
-A base de dados possui localidades que não têm CEP (valor do campo igual a zero), nestes casos o agrupamento utilizado foi o nome e tipo do logradouro. 
+A base de dados possui localidades que não têm CEP (valor do campo igual a zero), nestes casos o agrupamento utilizado foi o nome e tipo do logradouro e adicionados ao arquivo.
 
 Itemset 
 
