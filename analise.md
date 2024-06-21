@@ -1,5 +1,5 @@
-### Análise
-#### Regionais
+# Análise
+## Regionais
 REGIONAL|População (2010)|Área (km²) (2018-presente)|Densidade (hab./km²)|Nº de bairros
 --|--|--|--|--
 Barreiro|282.156|53,6|5.156|73
@@ -12,12 +12,12 @@ Oeste|316.908|36,06|8.785|67
 Pampulha|266.859|51,21|4.848|63
 Venda Nova|230.339|29,27|8.997|44
 
-#### Total de Registros
+## Total de Registros
 Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **Total**
 --|--|--|--|--|--|--|--|--|--
 65390|220991|67561|87187|81741|51240|124864|108035|69808| **876817**
 
-#### Características dos Imóveis
+## Características dos Imóveis
 
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
 |--|--|--|--|--|--|--|--|--|--
@@ -34,14 +34,14 @@ Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **
 |VAGA DE GARAGEM NAO RESIDENCIAL|186| 24612| 542| 670| 157| 69| 5421| 1112| 117
 |VAGA DE GARAGEM RESIDENCIAL|77| 9230| 765| 569| 522| 57| 1464| 452| 46​
 
-#### Ocupação
+## Ocupação
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
 |--|--|--|--|--|--|--|--|--|--
 |NAO RESIDENCIAL|7773|88132|7809|10195|11405|4901|20668|11801|7446
 |RESIDENCIAL|54335|129925|57575|72892|68191|43564|100451|89558|59094
 |TERRITORIAL|3282|2932|2177|4100|2145|2775|3745|6676|3268
 
-#### Tipo de Imóveis
+## Tipo de Imóveis
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
 |--|--|--|--|--|--|--|--|--|--
 |ALINHAMENTO|3418|31282|5313|5713|3725|2231|8504|3241|4264
@@ -89,7 +89,7 @@ Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **
 |TERRITORIAL|1238|720|949|1361|653|1179|875|1100|934
 |UNIDADE CONDOMINIAL IRREGULAR|0|0|0|0|0|0|4|0|0
 
-#### Qualidade dos Imóveis
+## Qualidade dos Imóveis
 ||Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova
 |--|--|--|--|--|--|--|--|--|--
 |TE|3282|2932|2177|4100|2145|2775|3745|6676|3268
