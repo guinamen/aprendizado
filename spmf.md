@@ -8,7 +8,7 @@ A base de dados possui localidades que não têm CEP (valor do campo igual a zer
 
 ## Itemset 
 
-Para definir o conjunto dos itens, inicialmente, foi utilizado o produto cartesiano entre os valores das colunas de qualidade do acabamento do imóvel, o tipo construtivo e se o é um outlier, totalizando 101 itens. Os tipos construtivos possuem a informação do uso do imóvel sendo residencial ou não, sendo assim não há necessidade de utilizar a coluna do tipo de ocupação do imóvel. 
+Para definir o conjunto dos itens, inicialmente, foi utilizado o produto cartesiano entre os valores das colunas de qualidade do acabamento do imóvel, o tipo construtivo e se a área construída é um outlier, totalizando 101 itens. Os tipos construtivos possuem a informação do uso do imóvel sendo residencial ou não, sendo assim não há necessidade de utilizar a coluna do tipo de ocupação do imóvel. 
 
 ## Utilidade 
 
