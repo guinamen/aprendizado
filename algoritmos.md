@@ -12,6 +12,18 @@ CASA P1, CASA P2, CASA P3|1602.0
 Nenhum imóvel com metragem fora do padrão foi encontrado.
 
 ## Centro-Sul
+
+Itemset| Suporte
+--|--
+CASA P4 | 878.0
+APARTAMENTO P4 |885.0
+LOJA P3|990.0
+LOTE VAGO |1098.0
+APARTAMENTO P3|1109.0
+CASA P3|1246.0
+
+Nenhum imóvel com metragem fora do padrão foi encontrado.
+
 ## Leste
 ## Nordeste
 ## Noroeste
