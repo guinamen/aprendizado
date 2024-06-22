@@ -27,3 +27,5 @@
 ## [Metodologia GQM](gqm.md)
 ## [Análise](analise.md)
 ## [Gerar arquivos no formato do SPMF](spmf.md)
+## [Algortmo FPMax](algoritmos.md)
+## [Algortmo OpusMiner](opusminer.md)
