@@ -4,13 +4,14 @@ Como o objetivo do trabalho é caracterizar o espaço urbano, demos preferência
 ## Base 1
 Para analizar esta base o algoritmo FPMax foi utilizado para obter as representaçõe máximas de cada regional. Abaixo o resultado obtido utilizando o suporte mínimo de 40%. Em todoas as execuções nenhum imóvel com metragem fora do padrão foi encontrado.
 
-## Barreiro
+## FPMax
+### Barreiro
 Itemset| Suporte
 --|--
 CASA P2, CASA P3, LOTE VAGO|1176.0
 CASA P1, CASA P2, CASA P3|1602.0
 
-## Centro-Sul
+### Centro-Sul
 
 Itemset| Suporte
 --|--
@@ -21,7 +22,7 @@ LOTE VAGO |1098.0
 APARTAMENTO P3|1109.0
 CASA P3|1246.0
 
-## Leste
+### Leste
 Itemset| Suporte
 --|--
 CASA P2, LOJA P1 |699.0
@@ -35,13 +36,13 @@ CASA P3, LOTE VAGO|705.0
 CASA P2, LOTE VAGO|722.0
 CASA P2, CASA P3, CASA_P1 |879.0
 
-## Nordeste
+### Nordeste
 Itemset| Suporte
 --|--
 CASA P3, CASA P2, LOTE VAGO|1306.0
 CASA P3, CASA P2, CASA P1|1697.0
 
-## Noroeste
+### Noroeste
 Itemset| Suporte
 --|--
 BARRACÃO P2|1022.0
@@ -50,25 +51,25 @@ CASA P2, CASA P3, LOJA P2|1048.0
 CASA P2, CASA P3, LOTE VAGO|1045.0
 CASA P2, CASA P3, CASA P1|1231.0
 
-## Norte
+### Norte
 Itemset| Suporte
 --|--
 LOTE VAGO|1339.0
 CASA P2, CASA P3, CASA P1|1266.0
 
-## Oeste
+### Oeste
 Itemset| Suporte
 --|--
 LOTE VAGO|1572.0
 CASA P3, CASA P2|1578.0
 
-## Pampulha
+### Pampulha
 Itemset| Suporte
 --|--
 CASA P3, CASA P4|1489.0
 CASA P3, CASA P2, LOTE VAGO|1296.0
 
-## Venda Nova
+### Venda Nova
 Itemset| Suporte
 --|--
 CASA P2, CASA P3, LOTE VAGO|1260.0
