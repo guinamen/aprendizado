@@ -2,14 +2,13 @@
 Como o objetivo do trabalho é caracterizar o espaço urbano, demos preferência aos algroritmos de representação compacta. 
 
 ## Base 1
-Para analizar esta base o algoritmo FPMax foi utilizado para obter as representaçõe máximas de cada regional. Abaixo o resultado obtido utilizando o suporte mínimo de 40%
+Para analizar esta base o algoritmo FPMax foi utilizado para obter as representaçõe máximas de cada regional. Abaixo o resultado obtido utilizando o suporte mínimo de 40%. Em todoas as execuções nenhum imóvel com metragem fora do padrão foi encontrado.
+
 ## Barreiro
 Itemset| Suporte
 --|--
 CASA P2, CASA P3, LOTE VAGO|1176.0
 CASA P1, CASA P2, CASA P3|1602.0
-
-Nenhum imóvel com metragem fora do padrão foi encontrado.
 
 ## Centro-Sul
 
@@ -21,8 +20,6 @@ LOJA P3|990.0
 LOTE VAGO |1098.0
 APARTAMENTO P3|1109.0
 CASA P3|1246.0
-
-Nenhum imóvel com metragem fora do padrão foi encontrado.
 
 ## Leste
 Itemset| Suporte
@@ -38,11 +35,41 @@ CASA P3, LOTE VAGO|705.0
 CASA P2, LOTE VAGO|722.0
 CASA P2, CASA P3, CASA_P1 |879.0
 
-Nenhum imóvel com metragem fora do padrão foi encontrado.
-
 ## Nordeste
+Itemset| Suporte
+--|--
+CASA P3, CASA P2, LOTE VAGO|1306.0
+CASA P3, CASA P2, CASA P1|1697.0
+
 ## Noroeste
+Itemset| Suporte
+--|--
+BARRACAO P2|1022.0
+CASA P3, LOJA P3|1018.0
+CASA P2, CASA P3, LOJA P2|1048.0
+CASA P2, CASA P3, LOTE VAGO|1045.0
+CASA P2, CASA P3, CASA P1|1231.0
+
 ## Norte
+Itemset| Suporte
+--|--
+LOTE VAGO|1339.0
+CASA P2, CASA P3, CASA P1|1266.0
+
 ## Oeste
+Itemset| Suporte
+--|--
+LOTE VAGO|1572.0
+CASA P3, CASA P2|1578.0
+
 ## Pampulha
+Itemset| Suporte
+--|--
+CASA P3, CASA P4|1489.0
+CASA P3, CASA P2, LOTE VAGO|1296.0
+
 ## Venda Nova
+Itemset| Suporte
+--|--
+CASA P2, CASA_P3, LOTE VAGO|1260.0
+CASA P2, CASA_P3, CASA_P1|	1766.0
