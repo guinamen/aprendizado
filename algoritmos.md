@@ -25,6 +25,21 @@ CASA P3|1246.0
 Nenhum imóvel com metragem fora do padrão foi encontrado.
 
 ## Leste
+Itemset| Suporte
+--|--
+CASA P2, LOJA P1 |699.0
+CASA P3, APARTAMENTO P3|697.0
+CASA P3, LOJA P3|700.0
+CASA P2, LOJA P3|697.0
+CASA P3, LOJA P2|699.0
+CASA P2, LOJA P2|710.0
+CASA P2, CASA P3, BARRACAO P2|732.0
+CASA P3, LOTE VAGO|705.0
+CASA P2, LOTE VAGO|722.0
+CASA P2, CASA P3, CASA_P1 |879.0
+
+Nenhum imóvel com metragem fora do padrão foi encontrado.
+
 ## Nordeste
 ## Noroeste
 ## Norte
