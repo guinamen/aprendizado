@@ -12,4 +12,15 @@ Para definir o conjunto dos itens, inicialmente, foi utilizado o produto cartesi
 
 ## Utilidade 
 
-Os imóveis do espaço urbano podem variar muito em função da área construída, não somente pelos tipos e pela qualidade de acabamento. Como a área é um valor numérico em metros quadrados, ela foi adotada como valor e utilidade. O problema é que existem terrenos em que a área construída é zero. Para tal será feita duas abordagens, uma em que os terrenos sem construção são removidos da análise dos algoritmos, e uma abordagem em que será utilizada a área do terreno sem imóvel como uma utilidade negativa. Como o objetivo é caracterizar as regiões geográficas pelo uso e ocupação faz sentido um terreno sem construções ter uma utilidade negativa.   
+Os imóveis do espaço urbano podem variar muito em função da área construída, não somente pelos tipos e pela qualidade de acabamento. Como a área é um valor numérico em metros quadrados, ela foi adotada como valor e utilidade. O problema é que existem terrenos em que a área construída é zero. Para tal será feita duas abordagens, uma em que os terrenos sem construção são removidos da análise dos algoritmos, e uma abordagem em que será utilizada a área do terreno sem imóvel como uma utilidade negativa. Como o objetivo é caracterizar as regiões geográficas pelo uso e ocupação faz sentido um terreno sem construções ter uma utilidade negativa.
+
+## Bases Criadas
+## Base 1: Itens sem utilidade
+Para essa base aglutinamos os itens conforme os critérios de transações sem nenhuma informação sobre a quantidade de metros quadrados construídos.
+
+## Base 2: Itens com utilidade
+Para essa base foram removidos os terrenos vagos, e os itens foram aglutinados em transações que continha o total de área construída da transação e o total de área construída por item.
+
+## Base 3: Itens com utilidade negativa
+Para essa base foram adicionados os terrenos vagos com o quantidade de metros quadrados do terrno em valores negativos, e os itens foram aglutinados em transações que continha o total de área construída da transação, que neste caso poderia ser negativo, e o total de área construída por item, que nos casos dos terrenos vagos o valor é negativo.
+
