@@ -3,8 +3,8 @@
 Verifica se as técnicas de aprendizado descritivo são capazes de descrever as características imobiliárias das Regiões de Belo Horizonte​.
 
 ## Questionamentos​
-1. Quais são as cracterísticas básicas das regiões imobiliárias de Belo Horizonte.
-2. Qual a melhor técnica de aprendizado descritivo para avaliar as características das regiões de Belo Horizonte?​
+1. Quais são as cracterísticas básicas das regiões imobiliárias de Belo Horizonte?
+2. Quais informações os algoritmos de aprendizado descritivo agregaram na análise?
 3. Qual é a qualidade da informação gerada pela associação do ChatGPT e os resultados dos algoritmos descritivos?
 
 ## Métricas​
