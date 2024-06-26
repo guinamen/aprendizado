@@ -8,7 +8,7 @@
     4. - [x] Ajustar dados faltantes.​
 2. - [X] Fazer análise dos dados.​
 3. - [X] Gerar arquivos no formato do SPMF.​
-4. - [ ] Testar os algoritmos.​
+4. - [X] Testar os algoritmos.​
 5. - [ ] Responder as perguntas.
 
 ### Coleta de Dados​
@@ -28,7 +28,7 @@
 ## [Análise](analise.md)
 ## [Gerar arquivos no formato do SPMF](spmf.md)
 ## Algortmos
-### [Algortmo FPMax (Itemset Maximais)](algoritmos.md)
-### [Algortmo OpusMiner (Itemset com alta correlação estatística)](opusminer.md)
-### [Algortmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
-### [Algortmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
+- [Algortmo FPMax (Itemset Maximais)](algoritmos.md)
+- [Algortmo OpusMiner (Itemset com alta correlação estatística)](opusminer.md)
+- [Algortmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
+- [Algortmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
