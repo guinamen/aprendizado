@@ -1,23 +1,11 @@
 # Análise
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/regionais.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/populacao.png)
 ## Distribuição da Área Construída. 
 
 Ao analisar a área construída dos imóveis, foi constado que, ela varia muito em função dos tipos de imóveis. Sendo observado a existência de muitos valores fora do padrão (outliers). Sendo assim, uma nova dimensão binária foi adicionada aos dados, classificando-os em outliers caso estejam fora do intervalo I definido abaixo. Sendo IQR o valor interquartil e qn o valor do enésimo quartil.
 I=[q0.25−1.5⋅IQR; q0.75+1.5⋅IQR]
 Ao todo foram classficados 42.849 imóveis como sendo outiliers e 833.968 não.
-
-## Regionais
-REGIONAL|População (2010)|Área (km²) (2018-presente)|Densidade (hab./km²)|Nº de bairros
---|--|--|--|--
-Barreiro|282.156|53,6|5.156|73
-Centro-Sul|282.286|31,85|9.280|49
-Leste|228.986|27,98|8.334|47
-Nordeste|281.507|39,46|7.333|69
-Noroeste|271.143|30,17|8.907|52
-Norte|214.967|32,67|6.509|48
-Oeste|316.908|36,06|8.785|67
-Pampulha|266.859|51,21|4.848|63
-Venda Nova|230.339|29,27|8.997|44
 
 ## Total de Registros
 Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **Total**
