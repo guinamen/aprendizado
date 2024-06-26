@@ -29,4 +29,4 @@
 ## [Gerar arquivos no formato do SPMF](spmf.md)
 ## [Algortmo FPMax (Itemset Maximais)](algoritmos.md)
 ## [Algortmo OpusMiner (Itemset com alta correlação estatística)](opusminer.md)
-## [Algortmo OpusMiner (Itemset frequente de alta utilidade)](FHMFreq.md)
+## [Algortmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
