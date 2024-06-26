@@ -30,3 +30,4 @@
 ## [Algortmo FPMax (Itemset Maximais)](algoritmos.md)
 ## [Algortmo OpusMiner (Itemset com alta correlação estatística)](opusminer.md)
 ## [Algortmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
+## [Algortmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
