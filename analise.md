@@ -15,6 +15,7 @@ Ao todo foram classficados 42.849 imóveis como sendo outiliers e 833.968 não.
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/area.png)
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/populacao.png)
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/area_construida.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/grafo.png)
 
 ## Características dos Imóveis
 
