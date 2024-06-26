@@ -1,6 +1,7 @@
 # Análise
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/area.png)
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/populacao.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/area_construida.png)
 ## Distribuição da Área Construída. 
 
 Ao analisar a área construída dos imóveis, foi constado que, ela varia muito em função dos tipos de imóveis. Sendo observado a existência de muitos valores fora do padrão (outliers). Sendo assim, uma nova dimensão binária foi adicionada aos dados, classificando-os em outliers caso estejam fora do intervalo I definido abaixo. Sendo IQR o valor interquartil e qn o valor do enésimo quartil.
