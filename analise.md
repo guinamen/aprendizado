@@ -1,5 +1,5 @@
 # Análise
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/regionais.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/area.png)
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/populacao.png)
 ## Distribuição da Área Construída. 
 
