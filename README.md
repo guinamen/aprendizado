@@ -22,7 +22,7 @@
     - [x] Colunas não referentes ás características do imóvel foram removidas.​
     - [x] Removido um registro sem nenhum dado de endereço.​
     - [x] Removidos registro referentes a endereços fora de Belo Horizonte.​
-- [X] Selecionar outliers via [GritBot](https://www.rulequest.com/gritbot-info.html), * GritBot is an automatic tool that tries to find anomalies in data as a precursor to data mining. *
+- [X] Selecionar outliers via [GritBot](https://www.rulequest.com/gritbot-info.html), *GritBot is an automatic tool that tries to find anomalies in data as a precursor to data mining.*
 - [x] Resutaldo: Banco de dados SQLite
 
 ### Análise dos Dados
