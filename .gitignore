@@ -2,3 +2,10 @@
 .Rproj.user
 .Rhistory
 *.swp
+*.sift
+*.tmp
+GritBot/regionais.data
+GritBot/regionais.sift
+GritBot/regionais.tmp
+GritBot/saida.txt
+
