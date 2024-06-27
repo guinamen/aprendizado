@@ -22,7 +22,7 @@
     - [x] Colunas não referentes ás características do imóvel foram removidas.​
     - [x] Removido um registro sem nenhum dado de endereço.​
     - [x] Removidos registro referentes a endereços fora de Belo Horizonte.​
-- [X] Selecionar outliers via GritBot [Portal de Dados abertos da PBH](https://www.rulequest.com/gritbot-info.html)
+- [X] Selecionar outliers via [GritBot](https://www.rulequest.com/gritbot-info.html).
 - [x] Resutaldo: Banco de dados SQLite
 
 ### Análise dos Dados
