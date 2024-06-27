@@ -22,7 +22,30 @@
     - [x] Colunas não referentes ás características do imóvel foram removidas.​
     - [x] Removido um registro sem nenhum dado de endereço.​
     - [x] Removidos registro referentes a endereços fora de Belo Horizonte.​
-- [x] Resutaldo: Banco de dados SQLite 
+- [x] Resutaldo: Banco de dados SQLite
+
+### Análise dos Dados
+- [x] Gerar gráfico de barras das características imobiliárias.
+- [X] Gerar info mapas com os dados geográficos coletados.
+- [X] Gerar grafo de fronteiras das regionais.
+
+### Gerar arquivos no formato SPMF
+- [x] Fazer agrupamento das informações por CEP.
+- [X] Gerar código em R.
+- [X] Gerar preambulo do arquivo contendo os nomes dos itens.
+- [X] Gerar banco de dados com os itemsets.
+- [X] Gerar banco de dados com as utilidades.
+- [X] Gerar banco de dados com as utilidades negativas.
+
+### Testar os algoritmos
+- [x] Algoritmo FPMAX
+- [X] Algoritmo OpusMiner
+- [X] Algoritmo FHMFreq
+
+### Responder as perguntas
+- [ ] Pergunta 1
+- [ ] Pergunta 2
+- [ ] Pergunta 3
 
 ## [Metodologia GQM](gqm.md)
 ## [Análise](analise.md)
