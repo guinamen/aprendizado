@@ -29,7 +29,7 @@ p <- regionais %>%
                          style = north_arrow_fancy_orienteering) +
   theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5),
         panel.background = element_rect(fill = "aliceblue"),
-        panel.border = element_rect(colour = "black", fill=NA, size=1),
+        panel.border = element_rect(colour = "black", fill=NA),
         text=element_text(family="Josefin Sans")) +
   scale_fill_viridis_c(option = "turbo")
 ggsave('Imagens/area.png', p, bg='transparent')
@@ -49,7 +49,7 @@ q <- regionais %>% ggplot() +
                          style = north_arrow_fancy_orienteering) +
   theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5),
         panel.background = element_rect(fill = "aliceblue"),
-        panel.border = element_rect(colour = "black", fill=NA, size=1),
+        panel.border = element_rect(colour = "black", fill=NA),
         text=element_text(family="Josefin Sans")) +
   scale_fill_viridis_c(option = "turbo")
 ggsave('Imagens/populacao.png', q, bg='transparent')
@@ -69,7 +69,7 @@ r <- regionais %>% ggplot() +
                          style = north_arrow_fancy_orienteering) +
   theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5),
         panel.background = element_rect(fill = "aliceblue"),
-        panel.border = element_rect(colour = "black", fill=NA, size=1),
+        panel.border = element_rect(colour = "black", fill=NA),
         text=element_text(family="Josefin Sans")) +
   scale_fill_viridis_c(option = "turbo")
 ggsave('Imagens/area_construida.png', r, bg='transparent')
@@ -80,6 +80,6 @@ rownames(adj_matrix) <- regionais$SIGLA
 diag(adj_matrix) <- FALSE
 g <- graph_from_adjacency_matrix(adj_matrix, mode='undirected')
 
-png("Imagens/grafo.png", width = 512, height = 512,type='cairo')
+png("Imagens/grafo.png", width = 512, height = 512,type='cairo', units = 'px')
 plot(g)
 dev.off()

@@ -46,7 +46,7 @@ gera_imagens <- function(tabela, utilidade) {
          tag="Figura 3",
          fill = NULL) +
     theme(legend.position="top" )  + theme(rect = element_rect(fill = "transparent"))
-  png("imagens/ocupacao.png", width = 1029, height = 551,type='cairo')
+  png("Imagens/ocupacao.png", width = 1029, height = 551,type='cairo')
   print(p)
   dev.off()
   
