@@ -41,6 +41,7 @@
 - [x] Algoritmo FPMAX
 - [X] Algoritmo OpusMiner
 - [X] Algoritmo FHMFreq
+- [X] Algoritmo FHN
 
 ### Responder as perguntas
 - [ ] Pergunta 1
