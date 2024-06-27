@@ -1,0 +1,1 @@
+http://bhmapogcbase.pbh.gov.br:80/bhmapogcbase/ide_bhgeo/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ide_bhgeo:BAIRRO&outputFormat=SHAPE-ZIP
