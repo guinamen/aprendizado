@@ -11,7 +11,7 @@ source(file="R/le_banco.R")
 source(file='R/gera_imagem.R')
 source(file='R/gera_spmf.R')
 
-resultado_utilidadade <- read_csv("Resultados/Utilidade.csv", col_names = c('regional', 'itemset', 'utilidade', 'suporte'))
+resultado_utilidadade <- read_csv("Resultados/Utilidade.csv")
 dados <- ler_banco_dados("imobiliario.db")
 intervalo <- dados %>%
   group_by(REGIONAL, PADRAO_ACABAMENTO, TIPO_CONSTRUTIVO) %>%

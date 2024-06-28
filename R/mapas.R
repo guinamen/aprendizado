@@ -22,12 +22,12 @@ p <- regionais %>%
        fill="Km²",
        caption = "Fonte: BHMap PRODABEL PBH",
        subtitle = "Regionais - Área Geográfica") +
-  geom_text(aes(x=X, y=Y, label=SIGLA), colour= "white", fontface = "bold", family="Times", check_overlap = FALSE) +
+  geom_text(aes(x=X, y=Y, label=SIGLA), colour= "white", fontface = "bold", family="Times New Roman", check_overlap = FALSE) +
   annotation_scale(location = "br", width_hint = 0.5) +
   annotation_north_arrow(location = "br", which_north = "true", 
                          pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
                          style = north_arrow_fancy_orienteering) +
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5),
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed"),
         panel.background = element_rect(fill = "aliceblue"),
         panel.border = element_rect(colour = "black", fill=NA),
         text=element_text(family="Josefin Sans")) +
@@ -42,12 +42,12 @@ q <- regionais %>% ggplot() +
        fill="População",
        caption = "Fonte: BHMap PRODABEL PBH e IBGE Censo 2010",
        subtitle = "Regionais - População") +
-  geom_text(aes(x=X, y=Y, label=SIGLA), colour= "white", fontface = "bold", family="Times", check_overlap = FALSE) +
+  geom_text(aes(x=X, y=Y, label=SIGLA), colour= "white", fontface = "bold", family="Times New Roman", check_overlap = FALSE) +
   annotation_scale(location = "br", width_hint = 0.5) +
   annotation_north_arrow(location = "br", which_north = "true", 
                          pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
                          style = north_arrow_fancy_orienteering) +
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5),
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed"),
         panel.background = element_rect(fill = "aliceblue"),
         panel.border = element_rect(colour = "black", fill=NA),
         text=element_text(family="Josefin Sans")) +
@@ -62,12 +62,12 @@ r <- regionais %>% ggplot() +
        fill="Km²",
        caption = "Fonte: BHMap Dados Abertos PRODABEL PBH",
        subtitle = "Regionais - Área Construída") +
-  geom_text(aes(x=X, y=Y, label=SIGLA), colour= "white", fontface = "bold", family="Times", check_overlap = FALSE) +
+  geom_text(aes(x=X, y=Y, label=SIGLA), colour= "white", fontface = "bold", family="Times New Roman", check_overlap = FALSE) +
   annotation_scale(location = "br", width_hint = 0.5) +
   annotation_north_arrow(location = "br", which_north = "true", 
                          pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
                          style = north_arrow_fancy_orienteering) +
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5),
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed"),
         panel.background = element_rect(fill = "aliceblue"),
         panel.border = element_rect(colour = "black", fill=NA),
         text=element_text(family="Josefin Sans")) +
@@ -80,6 +80,6 @@ rownames(adj_matrix) <- regionais$SIGLA
 diag(adj_matrix) <- FALSE
 g <- graph_from_adjacency_matrix(adj_matrix, mode='undirected')
 
-png("Imagens/grafo.png", width = 512, height = 512,type='cairo', units = 'px')
+png("Imagens/grafo.png", width = 512, height = 512, type='cairo', units = 'px')
 plot(g)
 dev.off()
