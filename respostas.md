@@ -2,13 +2,23 @@
 
 ## Pergunta 1: Quais são as cracterísticas básicas das regiões imobiliárias de Belo Horizonte?
 
-### Barreiro
+### Análise dos Gráficos
 
-O Barreiro é a regional de maior extensão territorial da cidade de Belo Horizonte, é a terceira região em número de pessoas, a sexta colocada no total de área construída e a penúltima em número de imóveis. A análise sobre a coleta de lixo indica que a região tem baixa atividade humana, pois a maioria dos imóveis tem coleta de lixo em dias alternados. Possui em sua maioria casas de uso residencial. Os CEPs em sua maioria contêm casas de acabamento P1 ao P2 e lotes vagos. Com relação à área construída a maior parte é de casas de padrão de acabamento P1, P2 e P3. Aqui destaca a importância do uso dos algoritmos de utilidade, demonstrando que as casas P3 tem importância em área construída e menos em frequência. A análise de utilidade apresentou também forte presença de lojas nos mesmos CEPs em que há casas indicando uma área de comercio local e a presença de barracões próximos de casas. A análise não apresentou presença de apartamentos o que indica uma área não é substancialmente verticalizada. O Barreiro é uma região isolada que faz divisa somente com a região oeste.
+A análise do gráfico de coleta de lixo é importante, pois indiretamente revela a intensidade da atividade humana na região. Destam-se as regionais Centro-Sul e Oeste.
+O perfil geral do tipo de imóvel destaca-se os apartamentos em todas as regionais, indicando um processo de verticalização na capital mineira.
+Na grande maioria das regionais os imóveis se destinam à moradia residêncial, destaca-se a reginal Centro-Sul que possui uma grande quantidade de imóvies comerciais.
+Na grande maioria das regionais os imóvies são de qualidade de acbamento média, destaca-se a regional Centro-Sul com uma grande quantidade de alta a média qualidade.
 
-### Centro-Sul
-A região Centro-Sul é a segunda regional mais populosa, é a sexta colocada em área e é a primeira em total de área construída. A análise de coleta de lixo indica que a região é a que tem a maior intensidade de atividade humana. Possui uma distribuição igualitária de imóveis por CEPs, sendo eles de bom padrão de acabamento e um intenso comercio segmentado em regiões sendo a qualidade dos imóveis comerciais também de boa qualidade. A concentração dos imóveis deve-se a estrutura urbana planejada do centro da capital mineira. A análise da utilidade revela que esta região possui os maiores e melhores imóveis, tanto residencial quanto comercial. A análise apresentou muitos lotes vagos, ao verificar alguns, foi verificado a presença de parques e igrejas. A região possui o itemset de maior utilidade, sendo apartamentos de acabamento 3 a 4 o que indica uma forte verticalização e presença de imóveis de qualidade. A análise demonstrou também a forte presença de lojas de padrão 3 com área construída extremamente alta. O algoritmo OPUSMiner apresentou uma forte correlação com vagas de garagem tanto comerciais quanto residenciais, indicando uma área de destino do fluxo de trânsito. A análise demonstrou que as salas de alto padrão possuem vagas de garagem de alto padrão no mesmo CEP, uma indicação para futuros empreendimentos de alto padrão comercial.
+### Análise dos Algoritmos
+#### FPMax
+O algoritmo FPMax demonstra as regionais Barreiro, Nordeste, Norte, Oeste e Venda Nova, possuem no geral CEPs com os mesmos tipos de padrões. A forte presença de casas residênciais de padrão de acabamento variando de 1 a 3 e a presença de lotes vagos. Os imóveis em sua maioria são casas de uso residencial. Os CEPs em sua maioria contêm imóveis de acabamento P1 ao P2 e lotes vagos. O que indica um baixo índice de verticalização destas regionais. 
 
-### Leste
+A regional Pampulha tem um padrão de imóveis semelhantes aos anteriores mas destaca-se imóveis com padrão de acabamento melhor, e um baixo índice de verticalização.
+
+A regional Leste possui o maior número de itemsets demosntrando grande diversidade de tipos de imóveis e acabamento, ela apresenta imóveis do tipo apartamento o que indica uma tendência de verticalização ainda não totalmente concretizada pelo fato do item vim acompanhado de casas residênciais.
+
+A regional Cento-Sul possui uma distribuição igualitária de imóveis por CEPs, sendo eles de bom padrão de acabamento e um intenso comercio segmentado em regiões sendo a qualidade dos imóveis comerciais também de boa qualidade. A concentração dos imóveis deve-se a estrutura urbana planejada do centro da capital mineira. Detaca-se, somente nesta regional, os apartamentos de padrão de acabamento 4.
+
+#### OpusMiner
 
 
