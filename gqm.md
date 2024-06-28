@@ -5,7 +5,6 @@ Verifica se as técnicas de aprendizado descritivo são capazes de descrever as 
 ## Questionamentos​
 1. Quais são as cracterísticas básicas das regiões imobiliárias de Belo Horizonte?
 2. Quais informações os algoritmos de aprendizado descritivo agregaram na análise?
-3. Qual é a qualidade da informação gerada pela associação do ChatGPT e os resultados dos algoritmos descritivos?
 
 ## Métricas​
 Nome| Coluna| Tipo| Descrição
