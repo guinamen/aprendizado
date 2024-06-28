@@ -15,10 +15,11 @@ O algoritmo FPMax demonstra as regionais Barreiro, Nordeste, Norte, Oeste e Vend
 
 A regional Pampulha tem um padrão de imóveis semelhantes aos anteriores mas destaca-se imóveis com padrão de acabamento melhor, e um baixo índice de verticalização.
 
-A regional Leste possui o maior número de itemsets demosntrando grande diversidade de tipos de imóveis e acabamento, ela apresenta imóveis do tipo apartamento o que indica uma tendência de verticalização ainda não totalmente concretizada pelo fato do item vim acompanhado de casas residênciais.
+A regional Leste possui o maior número de itemsets demosntrando grande diversidade de tipos de imóveis e acabamento, ela apresenta imóveis do tipo apartamento o que indica uma tendência de verticalização ainda não totalmente concretizada pelo fato do item vim acompanhado de casas residênciais. Apresenta um forte comércio local com lojas variando o padrão de acabamento de 1 a 3.
+
+A regional Noroeste desta-se a presença de comércio local e se assemelha à regional Leste. Porém seus CEP tendem a ter um padrão mais comum, a presença do itemset BARRACÃO P2 demonstra que este tipo de imóvel encontrase concentrado, diferenciando-se da regional Leste. Também possui baixo índice de verticalização demonstrando um carater misto único.
 
 A regional Cento-Sul possui uma distribuição igualitária de imóveis por CEPs, sendo eles de bom padrão de acabamento e um intenso comercio segmentado em regiões sendo a qualidade dos imóveis comerciais também de boa qualidade. A concentração dos imóveis deve-se a estrutura urbana planejada do centro da capital mineira. Detaca-se, somente nesta regional, os apartamentos de padrão de acabamento 4.
 
 #### OpusMiner
-
-
+O objetivo do algoritmo é obter itemsets que tenham uma forte correlação independete do seu suporte.
