@@ -37,4 +37,6 @@ A Regional Leste mais uma vez apresentou um contraste muito alto o que ficou mai
 
 A Regional Centro-Sul foi a única que apresentou item com área construída muito acima do padrão foram as lojas de padrão de acabamento 3 e também apresentou o itemset com maior utilidade da capital os apartamentos de padrão de acabamento 3 e 4 totalizam nesta regional mais 10Km² de construção, demonstrando que a verticalização teve intensidade em andares quanto em número de prédios.
 
+#### Algoritmo FHN
+O objetivo desta análise e verifcar o impácto negativo que a presença de lotes vagos podem ter nas mesmas localidades que contém imóveis, para isto o valor da área construída do imóvel para lotes vagos recebeu o valor da negativo da área do terreno, e foi realizada uma comparação com os mesmos parâmetros e algoritmo sem os lotes vagos. Esta análise tem como objetivo verificar se a densidade de imóvies consntruídos. Foi verificado que nas Regionais Norte e Pampulha os lotes vagos estão distribuídos próximos aos lotes com construção o que indica uma baixa densidade de imóveis. A Regional Centro-Sul tem alta densidade de imóvies construídos. E as demais Regionais a distribuição de imóveis e lotes vagos tende a ser uniforme.
 
