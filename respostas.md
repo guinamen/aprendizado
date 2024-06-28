@@ -24,4 +24,17 @@ A regional Cento-Sul possui uma distribuição igualitária de imóveis por CEPs
 #### OpusMiner
 O objetivo do algoritmo é obter itemsets que tenham uma forte correlação independete do seu suporte. A análise demonstra que ele é muito útil para descrever os imóvies de alto padrão. Em todos as regionais foi verificado a nescessidade de vagas de garagem próxima aos imóveis comerciais, indicando a importância dos veículos para a dinâmica da cidade. Os imóveis comerciais de alto padrão de acabamento e de maiores áreas construídas tendem a ficarem no mesmo CEP. Nesta análise verifica o poder finaceiro da regional Centro-Sul, pois ela apresentou 82 CEPs com sala de alto padrão de acabamento acompanhados de vagas de garagem de alto acabamento, indicando que nesta regionl os grandes empreendimentos de alto padrão devem oferecer vagas de garagem com alta qualidade e espaço. A regional Norte apresenta um padrão em que os apartamentos de padrão 4 de acabamento de maior área construída ficam proximos aos de tamanho padrão de mesma qualidade.
 
+#### FHMFreq
+Ao cruzar a informação da área construída com o suporte tem uma análise mais detalhada da área construída média do itemset. A análise é bem semelhante ao algoritmo FPMax, mas neste caso foi verificado para as reginais, Barreiro, Nordeste, Norte, e Venda Nova a presença de comércio local o que dev-se a sua distância da regional Centro-Sul que possui os grandes centros comerciais.
+
+A regional Oeste apresentou nesta análise uma grande quantidade de apartamentos de padrão de acabamento 3 totalizando mais de 4 Km² construídos o que diverge da análise anterior, que sugeriu uma baixa verticalização. Acredita-se que a forma de verticalização concentrou-se em prédios de muitos andares, ou seja de forma mais vertical do que horizontal.
+
+A Pampulha destaca-se pelas casas de padrão de acabamento 4 totalizando 1.2 Km² em 779 CEPs.
+
+A Regional Noroeste apresenta uma grande área construída destinada à galpões, o que pode indicar boas características ligadas ao setor da logística, como rodovias, avenidas e ruas amplas.
+
+A Regional Leste mais uma vez apresentou um contraste muito alto o que ficou mais evidenciado pelos dois primeiros registros demonstrando a presença de apartamentos de padrão de acabamento 3 próximo à casas de padrão de acabamento 2 e 3. O baixo suporte do primeiro item desta análise pode indicar um grande potencial de verticalização sobre casas.
+
+A Regional Centro-Sul foi a única que apresentou item com área construída muito acima do padrão foram as lojas de padrão de acabamento 3 e também apresentou o itemset com maior utilidade da capital os apartamentos de padrão de acabamento 3 e 4 totalizam nesta regional mais 10Km² de construção, demonstrando que a verticalização teve intensidade em andares quanto em número de prédios.
+
 
