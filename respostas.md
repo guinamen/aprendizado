@@ -22,4 +22,6 @@ A regional Noroeste desta-se a presença de comércio local e se assemelha à re
 A regional Cento-Sul possui uma distribuição igualitária de imóveis por CEPs, sendo eles de bom padrão de acabamento e um intenso comercio segmentado em regiões sendo a qualidade dos imóveis comerciais também de boa qualidade. A concentração dos imóveis deve-se a estrutura urbana planejada do centro da capital mineira. Detaca-se, somente nesta regional, os apartamentos de padrão de acabamento 4.
 
 #### OpusMiner
-O objetivo do algoritmo é obter itemsets que tenham uma forte correlação independete do seu suporte.
+O objetivo do algoritmo é obter itemsets que tenham uma forte correlação independete do seu suporte. A análise demonstra que ele é muito útil para descrever os imóvies de alto padrão. Em todos as regionais foi verificado a nescessidade de vagas de garagem próxima aos imóveis comerciais, indicando a importância dos veículos para a dinâmica da cidade. Os imóveis comerciais de alto padrão de acabamento e de maiores áreas construídas tendem a ficarem no mesmo CEP. Nesta análise verifica o poder finaceiro da regional Centro-Sul, pois ela apresentou 82 CEPs com sala de alto padrão de acabamento acompanhados de vagas de garagem de alto acabamento, indicando que nesta regionl os grandes empreendimentos de alto padrão devem oferecer vagas de garagem com alta qualidade e espaço. A regional Norte apresenta um padrão em que os apartamentos de padrão 4 de acabamento de maior área construída ficam proximos aos de tamanho padrão de mesma qualidade.
+
+
