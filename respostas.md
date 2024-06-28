@@ -1,6 +1,6 @@
 # Respostas
 
-## Pergunta 1: Quais são as características básicas das regiões imobiliárias de Belo Horizonte?**
+## Pergunta 1: Quais são as características básicas das regiões imobiliárias de Belo Horizonte?
 
 **Análise dos Gráficos**
 
