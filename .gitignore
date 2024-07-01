@@ -8,4 +8,8 @@ GritBot/regionais.data
 GritBot/regionais.sift
 GritBot/regionais.tmp
 GritBot/saida.txt
-
+spmf.log
+SPMF/*
+optionsFile.txt
+rulesFile.txt
+testQM.txt
