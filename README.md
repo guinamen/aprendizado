@@ -23,7 +23,8 @@
     - [x] Removido um registro sem nenhum dado de endereço.​
     - [x] Removidos registro referentes a endereços fora de Belo Horizonte.​
 - [x] Gerar Banco de dados SQLite
-- [X] Selecionar outliers via [GritBot](https://www.rulequest.com/gritbot-info.html), *GritBot is an automatic tool that tries to find anomalies in data as a precursor to data mining.*
+- [X] Coletar outliers via [GritBot](https://www.rulequest.com/gritbot-info.html), *GritBot is an automatic tool that tries to find anomalies in data as a precursor to data mining.*
+- [X] Descobrir os centroides geoespaciais dos terrenos, latitude e longitude que melhor representa o imóvel.
 
 
 ### Análise dos Dados
