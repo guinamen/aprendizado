@@ -61,3 +61,4 @@
 - [Algoritmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
 - [Algoritmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
 - [Cortana (Busca por subgrupos)](subgrupo.md)
+## [Respostas](respostas.md)
