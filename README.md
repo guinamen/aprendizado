@@ -29,7 +29,7 @@
 
 ### Análise dos Dados
 - [x] Gerar gráfico de barras das características imobiliárias.
-- [X] Gerar info mapas com os dados geográficos coletados.
+- [X] Gerar info mapas com os dados geográficos coletados.Itemset de alta utilidade podendo ter valores negativos
 - [X] Gerar grafo de fronteiras das regionais.
 
 ### Gerar arquivos no formato SPMF
@@ -59,3 +59,4 @@
 - [Algoritmo OpusMiner (Itemset com alta correlação estatística)](opusminer.md)
 - [Algoritmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
 - [Algoritmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
+- [Cortana (Busca por subgrupos)](subgrupo.md)
