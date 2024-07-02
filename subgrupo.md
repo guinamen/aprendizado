@@ -12,3 +12,4 @@ Nr.|Depth|Coverage|Quality|Probability|Positives|p-Value|Conditions
 ### Mapa
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana.png)
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana2.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana3.png)
