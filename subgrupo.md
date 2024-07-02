@@ -7,3 +7,6 @@ Medida WRAcc, variável alvo Padrão de Acabamento, valor alvo P5, profundidade 
 Nr.|Depth|Coverage|Quality|Probability|Positives|p-Value|Conditions
 --|--|--|--|--|--|--|--
 1|4|22076|0.057697780430316925|0.42598296792897267|9404.0|NaN|AREA_CONSTRUCAO in (240.36, 6946.03] AND AREA_TERRENO in (449.49, 21167.36] AND X in (608895.7, 614244.56] AND Y in (-inf, 7796310.0]
+
+### Mapa
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana.png)
