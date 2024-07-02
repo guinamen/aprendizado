@@ -39,6 +39,7 @@
 - [X] Gerar banco de dados com os itemsets.
 - [X] Gerar banco de dados com as utilidades.
 - [X] Gerar banco de dados com as utilidades negativas.
+- [X] Gerar banco de dados para o Cortana.
 
 ### Testar os algoritmos
 - [x] Algoritmo FPMAX
