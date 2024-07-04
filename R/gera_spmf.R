@@ -142,5 +142,6 @@ executa_algoritmo <- function(algoritmo, entrada, saida, paramentros) {
                 saida,
                 paramentros,
                 sep = " ")
+  print(cmd)
   system(cmd)
 }

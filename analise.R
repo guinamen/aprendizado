@@ -1,4 +1,4 @@
-packs <- c("RSQLite", "tidyverse", "SDEFSR", "sf")
+packs <- c("RSQLite", "tidyverse", "sf")
 success <- suppressWarnings(sapply(packs, require, character.only = TRUE))
 install.packages(names(success)[!success])
 sapply(names(success)[!success], require, character.only = TRUE)
@@ -12,7 +12,7 @@ source(file="R/le_banco.R")
 source(file='R/gera_imagem.R')
 source(file='R/gera_spmf.R')
 
-resultado_utilidadade <- read_csv("Resultados/Utilidade.csv")
+resultado_utilidadade <- read_csv("Resultado/Utilidade.csv")
 dados <- ler_banco_dados("imobiliario.db")
 if(FALSE) {
   # Calcula o centroide geoespacial.
@@ -56,68 +56,35 @@ for (regional in levels(dados$REGIONAL)) {
     grava_arquivo_spmf(arquivo_utilidade_neg, tipos, gera_utilidade_negativa(regional, tipos, dados))
   }
   
-  if (!file.exists(paste("SPMF/item_set/Resultado/FPMax/itemset_",regional,".txt", sep=""))) {
+  if (!file.exists(paste("Resultado/FPMax/itemset_",regional,".txt", sep=""))) {
     executa_algoritmo("FPMax",
                       paste("SPMF/item_set/itemset_",regional,".txt", sep=""),
-                      paste("SPMF/item_set/Resultado/FPMax/itemset_",regional,".txt", sep=""),
+                      paste("Resultado/FPMax/itemset_",regional,".txt", sep=""),
                       "0.4")
   }
-  if (!file.exists(paste("SPMF/item_set/Resultado/OPUSMiner/itemset_",regional,".txt", sep=""))) {
+  if (!file.exists(paste("Resultado/OPUSMiner/itemset_",regional,".txt", sep=""))) {
     executa_algoritmo("OPUS-Miner",
                       paste("SPMF/item_set/itemset_",regional,".txt", sep=""),
-                      paste("SPMF/item_set/Resultado/OPUSMiner/itemset_",regional,".txt", sep=""),
+                      paste("Resultado/OPUSMiner/itemset_",regional,".txt", sep=""),
                       "10 true true true true false")
   }
-  if (!file.exists(paste("SPMF/utilidade/positiva/Resultado/FHMFreq/utilidade_",regional,".txt", sep=""))) {
+  if (!file.exists(paste("Resultado/FHMFreq/utilidade_",regional,".txt", sep=""))) {
     executa_algoritmo("FHMFreq",
                       paste("SPMF/utilidade/positiva/utilidade_",regional,".txt", sep=""),
-                      paste("SPMF/utilidade/positiva/Resultado/FHMFreq/utilidade_",regional,".txt", sep=""),
+                      paste("Resultado/FHMFreq/utilidade_",regional,".txt", sep=""),
                       "1000000 0.3")
   }
-  if (!file.exists(paste("SPMF/utilidade/negativa/Resultado/FHN_Negativo/utilidade_",regional,".txt", sep=""))) {
+  if (!file.exists(paste("Resultado/FHN_Negativo/utilidade_",regional,".txt", sep=""))) {
     executa_algoritmo("FHN",
                       paste("SPMF/utilidade/negativa/utilidade_negativa_",regional,".txt", sep=""),
-                      paste("SPMF/utilidade/negativa/Resultado/FHN_Negativo/utilidade_",regional,".txt", sep=""),
+                      paste("Resultado/FHN_Negativo/utilidade_",regional,".txt", sep=""),
                       "1000000 0.3")
   }
-  if (!file.exists(paste("SPMF/utilidade/negativa/Resultado/FHN_Positivo/utilidade_",regional,".txt", sep=""))) {
+  if (!file.exists(paste("Resultado/FHN_Positivo/utilidade_",regional,".txt", sep=""))) {
     executa_algoritmo("FHN",
                       paste("SPMF/utilidade/positiva/utilidade_",regional,".txt", sep=""),
-                      paste("SPMF/utilidade/negativa/Resultado/FHN_Positivo/utilidade_",regional,".txt", sep=""),
+                      paste("Resultado/FHN_Positivo/utilidade_",regional,".txt", sep=""),
                       "1000000 0.3")
   }
   
 }
-
-sdefsrDF <- SDEFSR_DatasetFromDataFrame(
-  as.data.frame(dados %>%
-                  filter(REGIONAL == "Centro-Sul") %>%
-                  select(FREQUENCIA_COLETA,
-                         #IND_MEIO_FIO,
-                         #IND_PAVIMENTACAO,
-                         #IND_ARBORIZACAO,
-                         #IND_GALERIA_PLUVIAL,
-                         #IND_ILUMINACAO_PUBLICA,
-                         #IND_REDE_ESGOTO,
-                         #IND_REDE_AGUA,
-                         #IND_REDE_TELEFONICA,
-                         #AREA_TERRENO,
-                         #AREA_CONSTRUCAO,
-                         TIPO_CONSTRUTIVO,
-                         #ZONA_HOMOGENIA,
-                         #QUANTIDADE_ECONOMIAS,
-                         #TIPO_OCUPACAO,
-                         #FRACAO_IDEAL,
-                         X,
-                         Y,
-                         #TIPO_LOGRADOURO,
-                         PADRAO_ACABAMENTO) %>%
-                  #mutate(IND_MEIO_FIO = as.character(IND_MEIO_FIO),
-                  #       IND_PAVIMENTACAO = as.character(IND_PAVIMENTACAO),
-                  #       IND_ARBORIZACAO = as.character(IND_ARBORIZACAO),
-                  #       IND_GALERIA_PLUVIAL = as.character(IND_GALERIA_PLUVIAL),
-                  #       IND_ILUMINACAO_PUBLICA = as.character(IND_ILUMINACAO_PUBLICA),
-                  #       IND_REDE_ESGOTO = as.character(IND_REDE_ESGOTO),
-                  #       IND_REDE_AGUA = as.character(IND_REDE_AGUA),
-                  #       IND_REDE_TELEFONICA = as.character(IND_REDE_TELEFONICA)) %>%
-                  filter(complete.cases(.)) ), "Centro-Sul")
