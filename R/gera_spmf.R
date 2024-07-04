@@ -27,14 +27,18 @@ gera_preambulo <- function(arquivo, tipos) {
   close(fileConn)
 }
 
+
+le_outliers <- function(regional) {
+  read.table(
+    paste("GritBot/", tolower(gsub(" ", "_", regional)), ".txt", sep = "" ),
+    col.names = c('REGIONAL'), sep = ',')
+}
+
 gera_item_set <- function(regional, indices, tabela) {
-  outliers <- read.csv(
-    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
-    col.names = 'REGIONAL')
   rbind(
     tabela %>%
-      anti_join(outliers) %>%
       filter(REGIONAL == regional) %>%
+      anti_join(le_outliers(regional)) %>%
       inner_join(indices) %>%
       group_by(CEP) %>%
       summarise(
@@ -54,13 +58,10 @@ gera_item_set <- function(regional, indices, tabela) {
 }
 
 gera_utilidade_positiva <- function(regional, indices, tabela) {
-  outliers <- read.csv(
-    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
-    col.names = 'REGIONAL')
   rbind(
     tabela %>%
-      anti_join(outliers) %>%
       filter(REGIONAL == regional & CEP > 0 & AREA_CONSTRUCAO > 0) %>%
+      anti_join(le_outliers(regional)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
       summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
@@ -88,13 +89,10 @@ gera_utilidade_positiva <- function(regional, indices, tabela) {
 }
 
 gera_utilidade_negativa <- function(regional, indices, tabela) {
-  outliers <- read.csv(
-    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
-    col.names = 'REGIONAL')
   rbind(
     tabela %>%
-      anti_join(outliers) %>%
       filter(REGIONAL == regional & CEP > 0) %>%
+      anti_join(le_outliers(regional)) %>%
       mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO, AREA_CONSTRUCAO)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
@@ -142,6 +140,5 @@ executa_algoritmo <- function(algoritmo, entrada, saida, paramentros) {
                 saida,
                 paramentros,
                 sep = " ")
-  print(cmd)
   system(cmd)
 }
