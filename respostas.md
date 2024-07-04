@@ -4,8 +4,6 @@
 
 **Análise dos Gráficos**
 
-A análise do gráfico de coleta de lixo é importante, pois revela indiretamente a intensidade da atividade humana na região. Destacam-se as regionais Centro-Sul e Oeste. O perfil geral dos tipos de imóveis mostra a predominância de apartamentos em todas as regionais, indicando um processo de verticalização na capital mineira. Na maioria das regionais, os imóveis são destinados à moradia residencial, com a regional Centro-Sul apresentando uma grande quantidade de imóveis comerciais. A qualidade dos imóveis varia, sendo predominantemente de acabamento médio, com destaque para a regional Centro-Sul que possui uma grande quantidade de imóveis de alta a média qualidade.
-
 **Análise dos Algoritmos**
 
 **FPMax**

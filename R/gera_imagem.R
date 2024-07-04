@@ -12,7 +12,7 @@ gera_imagens <- function(tabela, utilidade) {
          tag="Figura 1",
          fill = NULL) +
     theme(legend.position="top" )  + theme(rect = element_rect(fill = "transparent"))
-  png("Imagens/coleta.png", width = 1029, height = 551,type='cairo')
+  png("Imagens/coleta.png", width = 1029, height = 551, units = 'px', type='cairo')
   print(p)
   dev.off()
   
@@ -29,7 +29,7 @@ gera_imagens <- function(tabela, utilidade) {
          tag="Figura 2",
          fill = NULL) +
     theme(legend.position="top" )  + theme(rect = element_rect(fill = "transparent"))
-  png("Imagens/perfil.png", width = 1029, height = 551,type='cairo')
+  png("Imagens/perfil.png", width = 1029, height = 551, units = 'px', type='cairo')
   print(p)
   dev.off()
   
@@ -46,7 +46,7 @@ gera_imagens <- function(tabela, utilidade) {
          tag="Figura 3",
          fill = NULL) +
     theme(legend.position="top" )  + theme(rect = element_rect(fill = "transparent"))
-  png("Imagens/ocupacao.png", width = 1029, height = 551,type='cairo')
+  png("Imagens/ocupacao.png", width = 1029, height = 551, units = 'px', type='cairo')
   print(p)
   dev.off()
   
@@ -63,11 +63,12 @@ gera_imagens <- function(tabela, utilidade) {
          tag="Figura 4",
          fill = NULL) +
     theme(legend.position="top" )  + theme(rect = element_rect(fill = "transparent"))
-  png("Imagens/acabamento.png", width = 1029, height = 551,type='cairo')
+  png("Imagens/acabamento.png", width = 1029, height = 551, units = 'px', type='cairo')
   print(p)
   dev.off()
-  p <- utilidade %>% 
-    ggplot(aes(x=utilidade/1000000, y=suporte, group=regional,shape=regional,color=regional)) +
+  
+  u <- utilidade %>% 
+    ggplot(aes(x=Utilidade/1000000, y=Suporte, group=Regional,shape=Regional,color=Regional)) +
     geom_point() +
     scale_shape_manual(values = seq(0,8)) +
     labs(x = "Utilidade Km²",
@@ -76,7 +77,7 @@ gera_imagens <- function(tabela, utilidade) {
          subtitle = "Regional",
          caption = "Fonte: Portal de Dados Abertos da PBH",
          tag="Figura 5", shape=NULL, color=NULL)  + theme(rect = element_rect(fill = "transparent"))
-  png("Imagens/utilidade_suporte.png", width = 1029, height = 551,type='cairo')
-  print(p)
+  png("Imagens/utilidade_suporte.png", width = 1029, height = 551,  units = 'px', type='cairo')
+  print(u)
   dev.off()
 }

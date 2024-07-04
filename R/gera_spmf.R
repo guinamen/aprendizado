@@ -1,3 +1,9 @@
+system <- function(...) {
+  stopifnot(!any(names(list(...)) %in% "intern"))
+  result <- base::system(..., intern = TRUE)
+  write(result, file="spmf.log",append=TRUE)
+}
+
 gera_preambulo <- function(arquivo, tipos) {
   fileConn<-file(arquivo, )
   writeLines(c("@CONVERTED_FROM_TEXT"), fileConn)
@@ -22,8 +28,12 @@ gera_preambulo <- function(arquivo, tipos) {
 }
 
 gera_item_set <- function(regional, indices, tabela) {
+  outliers <- read.csv(
+    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
+    col.names = 'REGIONAL')
   rbind(
     tabela %>%
+      anti_join(outliers) %>%
       filter(REGIONAL == regional) %>%
       inner_join(indices) %>%
       group_by(CEP) %>%
@@ -44,8 +54,12 @@ gera_item_set <- function(regional, indices, tabela) {
 }
 
 gera_utilidade_positiva <- function(regional, indices, tabela) {
+  outliers <- read.csv(
+    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
+    col.names = 'REGIONAL')
   rbind(
     tabela %>%
+      anti_join(outliers) %>%
       filter(REGIONAL == regional & CEP > 0 & AREA_CONSTRUCAO > 0) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
@@ -74,10 +88,14 @@ gera_utilidade_positiva <- function(regional, indices, tabela) {
 }
 
 gera_utilidade_negativa <- function(regional, indices, tabela) {
+  outliers <- read.csv(
+    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
+    col.names = 'REGIONAL')
   rbind(
     tabela %>%
+      anti_join(outliers) %>%
       filter(REGIONAL == regional & CEP > 0) %>%
-      mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO,AREA_CONSTRUCAO)) %>%
+      mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO, AREA_CONSTRUCAO)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
       summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
@@ -91,7 +109,7 @@ gera_utilidade_negativa <- function(regional, indices, tabela) {
     ,
     tabela %>%
       filter(REGIONAL == regional & CEP == 0) %>%
-      mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO,AREA_CONSTRUCAO)) %>%
+      mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO, AREA_CONSTRUCAO)) %>%
       inner_join(indices) %>%
       group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, INDICE, .groups = "drop") %>%
       summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
@@ -103,4 +121,26 @@ gera_utilidade_negativa <- function(regional, indices, tabela) {
         , .groups = 'drop') %>% 
       select(ITEMSET, UTILIDADE_TOTAL, UTILIDADE)
   )  
+}
+
+grava_arquivo_spmf <- function(arquivo, tipos, dados) {
+  gera_preambulo(arquivo, tipos)
+  write.table(dados,
+              file = arquivo,
+              sep = ":",
+              col.names = FALSE,
+              row.names = FALSE,
+              quote = FALSE,
+              append=TRUE)
+}
+
+executa_algoritmo <- function(algoritmo, entrada, saida, paramentros) {
+  java <- '"c:\\Users\\Guilherme Namem\\java\\jdk-22.0.1\\bin\\java.exe" -jar spmf.jar run'
+  cmd <- paste(java,
+                algoritmo,
+                entrada,
+                saida,
+                paramentros,
+                sep = " ")
+  system(cmd)
 }

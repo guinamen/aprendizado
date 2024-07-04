@@ -42,3 +42,4 @@ ler_banco_dados <- function(arquivo) {
   return(imoveis)
 }
 
+
