@@ -32,7 +32,7 @@
 - [X] Gerar info mapas com os dados geográficos coletados.Itemset de alta utilidade podendo ter valores negativos
 - [X] Gerar grafo de fronteiras das regionais.
 
-### Gerar arquivos no formato SPMF
+### Gerar arquivos no formato SPMF e Cortana
 - [x] Fazer agrupamento das informações por CEP.
 - [X] Gerar código em R.
 - [X] Gerar preambulo do arquivo contendo os nomes dos itens.
@@ -46,9 +46,10 @@
 - [X] Algoritmo OpusMiner
 - [X] Algoritmo FHMFreq
 - [X] Algoritmo FHN
+- [X] Cortana - Subgrupo
 
 ### Responder as perguntas
-- [ ] Pergunta 1
+- [X] Pergunta 1
 - [ ] Pergunta 2
 - [ ] Pergunta 3
 
