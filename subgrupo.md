@@ -1,7 +1,7 @@
 # Descoberta de Subgrupo
 
 Para descoberta de subgrupos foi utilizado o programa [Cortana](https://datamining.liacs.nl/cortana.html) utilizando toda a base de imóveis residenciais que não seja uma vaga de garagem. Com as seguintes configurações:
-Medida WRAcc, variável alvo Padrão de Acabamento, valor alvo P5, profundidade 4, cobertura mínima 10.000, cobertura máxima 70%, número de subgrupos 1, tempo de execução máximo um minuto, estratégia bean, largura de procura 100, estratégia numérica intervalos.
+Medida WRAcc de no mínimo 0.02, variável alvo Padrão de Acabamento, valor alvo P5, profundidade 4, cobertura mínima 10.000, cobertura máxima 70%, número de subgrupos 1, tempo de execução máximo um minuto, estratégia bean, largura de procura 100, estratégia numérica intervalos.
 As variáveis X e Y representam, respectivamente, latitude e longitude no referencial [SIRGAS 2000](https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/sirgas.html).
 
 ## Resultado
