@@ -7,7 +7,6 @@ As variáveis X e Y representam, respectivamente, latitude e longitude no refere
 ## Resultado
 Nr.|Depth|Coverage|Quality|Probability|Positives|p-Value|Conditions
 --|--|--|--|--|--|--|--
-1|4|22076|0.057697780430316925|0.42598296792897267|9404.0|NaN|AREA_CONSTRUCAO in (240.36, 6946.03] AND AREA_TERRENO in (449.49, 21167.36] AND X in (608895.7, 614244.56] AND Y in (-inf, 7796310.0]
 1|6|5474|0,052452|0,248082|1.358| AREA_TERRENO >= 449.5 AND AREA_CONSTRUCAO >= 400.0 AND Y <= 7796046.5 AND X <= 614244.56 AND X >= 608928.3 AND AREA_CONSTRUCAO <= 43316.2
 
 ### Mapa
