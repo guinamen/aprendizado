@@ -8,9 +8,9 @@
 
 **FPMax**
 
-O algoritmo FPMax revela que as regionais Barreiro, Nordeste, Norte, Oeste e Venda Nova possuem CEPs com padrões semelhantes. Nessas regiões, há uma forte presença de casas residenciais com acabamentos variando de 1 a 3, além de muitos lotes vagos, indicando um baixo índice de verticalização.
+O algoritmo FPMax revela que as regionais Barreiro, Nordeste, Norte, Oeste e Venda Nova possuem CEPs com padrões semelhantes. Nessas regiões, há uma forte presença de casas residenciais com acabamentos variando de 1 a 3, além de muitos lotes vagos, indicando um baixo índice construtivo.
 
-A regional Pampulha apresenta um padrão de imóveis semelhantes aos das regiões mencionadas, porém com um melhor acabamento e ainda um baixo índice de verticalização.
+A regional Pampulha apresenta um padrão de imóveis semelhantes aos das regiões mencionadas, porém com um melhor acabamento.
 
 A regional Leste possui a maior diversidade de tipos de imóveis e acabamentos, incluindo apartamentos, o que sugere uma tendência de verticalização ainda não completamente concretizada. Além disso, a região tem um comércio local significativo, com lojas variando de acabamento 1 a 3.
 
