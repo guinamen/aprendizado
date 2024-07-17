@@ -125,9 +125,5 @@ for (regional in levels(dados$REGIONAL)) {
 }
 
 gera_imagens(dados, utilidade)
-gera_cortana("Leste", dados, "Cortana/Leste.csv")
-gera_cortana("Oeste", dados, "Cortana/Oeste.csv")
-gera_cortana("Pampulha", dados, "Cortana/Pampulha.csv")
 gera_cortana("Centro-Sul", dados, "Cortana/Centro-Sul.csv")
-gera_cortana("Nordeste", dados, "Cortana/Nordeste.csv")
-gera_cortana("Noroeste", dados, "Cortana/Noroeste.csv")
+
