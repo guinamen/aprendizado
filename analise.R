@@ -11,6 +11,7 @@ library(sf)
 source(file="R/le_banco.R")
 source(file='R/gera_imagem.R')
 source(file='R/gera_spmf.R')
+source(file='R/gera_cortana.R')
 
 
 dados <- ler_banco_dados("imobiliario.db")
@@ -52,6 +53,7 @@ for (regional in levels(dados$REGIONAL)) {
   arquivo_utilidade <- paste("SPMF/utilidade/positiva/utilidade_", gsub(" ", "_", regional), '.txt', sep = "")
   arquivo_item_set <- paste("SPMF/item_set/itemset_", gsub(" ", "_", regional), '.txt', sep = "")
   arquivo_utilidade_neg <- paste("SPMF/utilidade/negativa/utilidade_negativa_", gsub(" ", "_", regional), '.txt', sep = "")
+  arquivo_utilidade_seq <- paste("SPMF/utilidade_seq/utilidade_seq_", gsub(" ", "_", regional), '.txt', sep = "")
   
   if (!file.exists(arquivo_utilidade)) {
     grava_arquivo_spmf(arquivo_utilidade, tipos, gera_utilidade_positiva(regional, tipos, dados))
@@ -61,6 +63,14 @@ for (regional in levels(dados$REGIONAL)) {
   }
   if (!file.exists(arquivo_utilidade_neg)) {
     grava_arquivo_spmf(arquivo_utilidade_neg, tipos, gera_utilidade_negativa(regional, tipos, dados))
+  }
+  if (!file.exists(arquivo_utilidade_seq)) {
+    grava_arquivo_spmf(
+      arquivo_utilidade_seq,
+      tipos,
+      gera_utilidade_sequencial(regional, tipos, dados),
+      sep=' SUtility:',
+      gera_preambulo=TRUE)
   }
   
   if (!file.exists(paste("Resultado/FPMax/itemset_",gsub(" ", "_", regional),".txt", sep=""))) {
@@ -85,13 +95,13 @@ for (regional in levels(dados$REGIONAL)) {
     executa_algoritmo("FHN",
                       paste("SPMF/utilidade/negativa/utilidade_negativa_",gsub(" ", "_", regional),".txt", sep=""),
                       paste("Resultado/FHN_Negativo/utilidade_",gsub(" ", "_", regional),".txt", sep=""),
-                      "1000000 0.3")
+                      "1000000")
   }
   if (!file.exists(paste("Resultado/FHN_Positivo/utilidade_",gsub(" ", "_", regional),".txt", sep=""))) {
     executa_algoritmo("FHN",
                       paste("SPMF/utilidade/positiva/utilidade_",gsub(" ", "_", regional),".txt", sep=""),
                       paste("Resultado/FHN_Positivo/utilidade_",gsub(" ", "_", regional),".txt", sep=""),
-                      "1000000 0.3")
+                      "1000000")
   }
   
   con = file(paste("Resultado/FHMFreq/utilidade_",gsub(" ", "_", regional),".txt", sep=""), "r")
@@ -115,5 +125,9 @@ for (regional in levels(dados$REGIONAL)) {
 }
 
 gera_imagens(dados, utilidade)
-
-
+gera_cortana("Leste", dados, "Cortana/Leste.csv")
+gera_cortana("Oeste", dados, "Cortana/Oeste.csv")
+gera_cortana("Pampulha", dados, "Cortana/Pampulha.csv")
+gera_cortana("Centro-Sul", dados, "Cortana/Centro-Sul.csv")
+gera_cortana("Nordeste", dados, "Cortana/Nordeste.csv")
+gera_cortana("Noroeste", dados, "Cortana/Noroeste.csv")

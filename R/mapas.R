@@ -17,7 +17,7 @@ p <- regionais %>%
   ggplot() + 
   geom_sf(aes(fill = AREA_KM2)) + 
   labs(title="Belo Horizonte",
-       x ="Longitude",
+       x ="Latitudex",
        y = "Latitude",
        fill="Km²",
        caption = "Fonte: BHMap PRODABEL PBH",
