@@ -7,12 +7,12 @@ Para analizar esta base o algoritmo Opus-Miner foi utilizado para obter as repre
 ## OPUS Miner
 Opus-Miner é um algoritmo de mineração de conjuntos de itens frequentes estatisticamente significativos, que são chamados de conjuntos de itens autossuficientes.
 Esse algoritmo é interessante porque não apenas descobre conjuntos de itens frequentes, mas visa garantir que os padrões encontrados também sejam estatisticamente significativos (não ocorram com frequência por acaso).
-Webb et al., argumentam que esse conjunto de itens poderia ser mais interessante do que conjuntos de itens frequentes. Para análise o algoritmo foi configurado para 10 regras de associação, com os parâmetros check independency (filter), search by lift, check redundancy e correction for multicompare como verdadeiros.
+Webb et al., argumentam que esse conjunto de itens poderia ser mais interessante do que conjuntos de itens frequentes. Para análise o algoritmo foi configurado para 10 regras de associação, com os parâmetros check independency (filter), search by lift, check redundancy e correction for multicompare como verdadeiros. O valor de p foi omitido porque em todos o seu valor foi muito próximo de zero.
 
 ### Barreiro
 
-Regional|Itemset | Suporte| Lift | p
---|--|--|--|--|
+Regional|Itemset | Suporte| Lift 
+--|--|--|--|
 Barreiro|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |2|14.345.001
 Barreiro|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2, LOJA P5 OUTLIER |2|14.345.001
 Barreiro|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |2|4.781.667
