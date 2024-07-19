@@ -194,5 +194,3 @@ Venda Nova|CASA P1, CASA P2|3.216.152|937
 Venda Nova|CASA P3|3.182.313|1.233
 Venda Nova|CASA P3, CASA P2|5.922.939|1.160
 Venda Nova|CASA P2|2.865.883|1.266
-
-![image](https://github.com/user-attachments/assets/e803e609-43ac-4a46-a24d-33a7aec57e20)
