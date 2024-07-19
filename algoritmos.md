@@ -41,6 +41,3 @@ Pampulha|CASA P3, CASA P4|1.489
 Pampulha|CASA P3, CASA P2, LOTE VAGO|1.296
 Venda Nova|CASA P2, CASA P3, LOTE VAGO|1.260
 Venda Nova|CASA P2, CASA P3, CASA P1|1.766
-
-
-![image](https://github.com/user-attachments/assets/e803e609-43ac-4a46-a24d-33a7aec57e20)
