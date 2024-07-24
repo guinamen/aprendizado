@@ -46,6 +46,8 @@ CS210|13
 CS212|13
 CS411|23
 
+### Exmplo de Imóvel Encontrado
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/gentrificacao.png)
 
 ### Mapa
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/cortana.png)
