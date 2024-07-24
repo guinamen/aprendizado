@@ -1,6 +1,6 @@
 # Descoberta de Subgrupo
 
-Para descoberta de subgrupos foi utilizado o programa [Cortana](https://datamining.liacs.nl/cortana.html). Os registros foram agrupados pelo centroide do terreno, sendo coletadas as seguintes informações: X (latitude), Y (longitude), área do terreno, área média construída, tipo de construção e o padrão de qualidade máximo. Somente a regional Centro-Sul foi analizada em busca de imóveis que podem estar em situação social vulnerável.
+Para descoberta de subgrupos foi utilizado o programa [Cortana](https://datamining.liacs.nl/cortana.html). Os registros foram agrupados pelo centroide do terreno, sendo coletadas as seguintes informações: X (latitude), Y (longitude), área do terreno, área média construída, tipo de construção e o padrão de qualidade máximo. Somente a regional Centro-Sul foi analizada em busca de imóveis que podem estar em situação social vulnerável. Ao todo foram encontrados 6.748 apartamentos (45,1%).
 
 O software foi configurado da seguinte forma:
 Medida WRAcc com valor mínimo de 0.09, variável alvo Tipo Construtivo, valor alvo Apartamento, profundidade 5, cobertura mínima 2, cobertura máxima 100%, número de subgrupos 0, tempo de execução máximo um minuto, estratégia best first, estratégia numérica best.
