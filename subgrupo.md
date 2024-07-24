@@ -17,7 +17,7 @@ Nr.|Depth|Coverage|Quality|Probability|Positives|Conditions
 6|5|5956|11,85%|74,87%|4459|Y >= 7793407.0 AND AREA_TERRENO >= 361.46 AND Y <= 7797546.5 AND X <= 613161.7 AND AREA_CONSTRUCAO <= 738.49
 
 O resultado 2 foi escolhido para filtrar a base dos registros imoboliários para selecionar os imóveis que se enquadram neste resultado e que possui padrão de qualidade P1, agrupados pela zona homogenia, gerando a seguinte tabela.
-Zone Homogenia| Total de imóveis P1
+Zone Homogenia| Total
 --|--
 CS101|1
 CS111|1
