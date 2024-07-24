@@ -5,14 +5,14 @@
     <target_concept>
       <nr_target_attributes>1</nr_target_attributes>
       <target_type>single nominal</target_type>
-      <primary_target>PADRAO_ACABAMENTO</primary_target>
-      <target_value>P5</target_value>
+      <primary_target>TIPO_CONSTRUTIVO</primary_target>
+      <target_value>APARTAMENTO</target_value>
       <secondary_target/>
       <multi_targets/>
     </target_concept>
     <search_parameters>
-      <quality_measure>F-measure</quality_measure>
-      <quality_measure_minimum>0.2</quality_measure_minimum>
+      <quality_measure>WRAcc</quality_measure>
+      <quality_measure_minimum>0.02</quality_measure_minimum>
       <search_depth>5</search_depth>
       <minimum_coverage>2</minimum_coverage>
       <maximum_coverage_fraction>1.0</maximum_coverage_fraction>
