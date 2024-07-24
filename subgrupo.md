@@ -10,6 +10,5 @@ Nr.|Depth|Coverage|Quality|Probability|Positives|p-Value|Conditions
 1|6|5474|0,052452|0,248082|1.358|-|AREA_TERRENO >= 449.5 AND AREA_CONSTRUCAO >= 400.0 AND Y <= 7796046.5 AND X <= 614244.56 AND X >= 608928.3 AND AREA_CONSTRUCAO <= 43316.2
 
 ### Mapa
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana2.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cortana-ap.png)
 
