@@ -23,6 +23,7 @@
 \usepackage{parskip}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \newlist{questions}{enumerate}{2}
 \setlist[questions,1]{label=P\arabic*.,ref=P\arabic*}
@@ -63,11 +64,13 @@ Este trabalho apresenta um sistema de descoberta de conhecimento para descrever 
 
 \section{Introdução}
 
-%Os impressionantes avanços em tecnologia de aprendizado de máquina estão cada vez mais presentes no cotidiano das pessoas \cite{doshi2017towards}, frequentemente superando o desempenho humano em algumas tarefas \cite{silver2016mastering}. No entanto, muitas ferramentas de aprendizado de máquina não permitem a auditoria de seus métodos, pois não produzem regras plenamente interpretáveis, dificultando o processo de verificação pelos administradores. Neste trabalho, o termo interpretação é definido como a capacidade de gerar termos plenamente compreensíveis por humanos. Para uma definição mais completa e discussão mais profunda, recomenda-se o trabalho de Doshi-Velez et al \cite{doshi2017towards}. 
+Os impressionantes avanços em tecnologia de aprendizado de máquina estão cada vez mais presentes no cotidiano das pessoas \cite{doshi2017towards}, frequentemente superando o desempenho humano em algumas tarefas \cite{silver2016mastering}. No entanto, muitas ferramentas de aprendizado de máquina não permitem a auditoria de seus métodos, pois não produzem regras plenamente interpretáveis, dificultando o processo de verificação pelos administradores. Neste trabalho, o termo interpretação é definido como a capacidade de gerar termos plenamente compreensíveis por humanos. Para uma definição mais completa e discussão mais profunda, recomenda-se o trabalho de Doshi-Velez et al \cite{doshi2017towards}. 
 
-Uma forma de gerar regras compreensíveis é utilizar técnicas de mineração de dados \cite{zaki2014data}, que possuem a capacidade de processar grandes quantidades de dados e gerar modelos descritivos de interesse, facilmente interpretáveis. Atualmente, há uma vasta gama de algoritmos e ferramentas \cite{mikut2011data} de mineração de dados, desenvolvidos ao longo dos últimos 25 anos \cite{luna2019frequent}. %Embora esses algoritmos gerem muitos resultados, nem todos são de interesse, devido ao espaço de busca que cresce exponencialmente \cite{zaki2014data}. Dada a quantidade de informações geradas e a diversidade de algoritmos propostos, este trabalho tem como objetivo adaptar a arquitetura de dutos e filtros de descoberta de conhecimento em banco de dados \cite{nwagu2017knowledge}, utilizando um conjunto mínimo de algoritmos de mineração de dados.
+Uma forma de gerar regras compreensíveis é utilizar técnicas de mineração de dados \cite{zaki2014data}, que possuem a capacidade de processar grandes quantidades de dados e gerar modelos descritivos de interesse, facilmente interpretáveis. Atualmente, há uma vasta gama de algoritmos e ferramentas \cite{mikut2011data} de mineração de dados, desenvolvidos ao longo dos últimos 25 anos \cite{luna2019frequent}. %Embora esses algoritmos gerem muitos resultados, nem todos são de interesse, devido ao espaço de busca que cresce exponencialmente \cite{zaki2014data}.
 
 A análise do espaço urbano exige a compreensão de padrões complexos e multifacetados, frequentemente ocultos em grandes volumes de dados. A interoperabilidade dos métodos utilizados nesse processo é crucial, pois permite aos planejadores urbanos e gestores públicos compreenderem as forças que moldam a cidade, embasando a formulação de políticas públicas mais eficazes e socialmente justas. Nesse contexto, a mineração de dados, com sua capacidade de gerar regras compreensíveis por humanos, surge como uma ferramenta poderosa para desvendar tais padrões e relações. A identificação de áreas vulneráveis à gentrificação \cite{andrade2020urban}, por exemplo, demanda a análise conjunta de variáveis socioeconômicas e características dos imóveis, e a capacidade de interpretar os resultados obtidos pode ser decisiva para a criação de políticas públicas que promovam o desenvolvimento urbano sustentável e inclusivo.
+
+Dada a quantidade de informações geradas e a diversidade de algoritmos propostos, este trabalho tem como objetivo adaptar a arquitetura de dutos e filtros de descoberta de conhecimento em banco de dados \cite{nwagu2017knowledge}, utilizando um conjunto mínimo de algoritmos de mineração de dados.
 
 \section{Desenvolvimento}
 
@@ -75,11 +78,11 @@ Para guiar o desenvolvimento do pipeline de algoritmos de mineração de dados, 
 
 Para o desenvolvimento do trabalho foi utilizada a metodologia Goal Question Metric (GQM) \cite{caldiera1994goal}, metodologia muito utilizada no campo da Engenharia de Software \cite{sommerville2011software}. 
 
-Sendo assim a meta é: desenvolver um sistema em arquitetura de dutos e filtros (pipeline) para melhor descrever os dados de uma base utilizando o princípio DCM. 
+Sendo assim a meta é: desenvolver um sistema em arquitetura de dutos e filtros (\textit{pipeline}) para melhor descrever os dados de uma base de dados imobiliário urbanos, utilizando o princípio DCM. 
 
 Os questionamentos são:
 \begin{questions}
-        \item Quais os algoritmos de mineração de dados são úteis para descrever uma base de dados?
+        \item Quais os algoritmos de mineração de dados são úteis para descrever uma base de dados urbanos?
         \item Quais informações eles podem gerar?
         \item Qual é a melhor sequência de algoritmos para descrever os dados e formar a arquitetura de dutos?
 \end{questions}
@@ -91,12 +94,12 @@ As métricas são:
         \item Qualidade do resultado.
 \end{metrics}
 \section{Descrição dos dados}
-Para este trabalho foi utilizado um base de dados dos imóveis da Capital Mineira Belo Horizonte, os dados encontram-se no Portal de Dados Abertos da Prefeitura de Belo Horizonte. A escolha desta base deve-se ao seu tamanho e à sua importância para as Políticas de Uso e Ocupação do Solo do município e a facilidade para comprovar os resultados, uma vez que os autores residem nesta localidade. 
+Para este trabalho foi utilizado um base de dados dos imóveis da Capital Mineira Belo Horizonte, os dados são providos pelo \href{https://dados.pbh.gov.br/}{Portal de Dados Abertos da Prefeitura de Belo Horizonte}. A escolha desta base deve-se ao seu tamanho, importância para as Políticas de Uso e Ocupação do Solo do município e a facilidade para comprovar os resultados, uma vez que os autores residem nesta localidade. 
 
 O Portal de Dados Abertos possui a série histórica dos dados imobiliários de Belo Horizonte, divididos pelas regionais, que se constitui de uma divisão geográfica baseada em critérios únicos de cada regional. Ao todo a capital está dividida nas seguintes nove regionais:
 %% tabela
 
-\begin{table}
+\begin{table}[h]
     \centering
     \begin{tabular}{cccc}
 Regional & População\footnote{IBGE Censo 2010} & Área (km²) & Bairros\\
@@ -119,24 +122,23 @@ TOTAL & 2.375.151 & 332,27 & 487\footnote{Alguns bairros estão em mais de uma r
     \label{tab:regionais}
 \end{table}
 
-A divisão de Belo Horizonte em nove regionais administrativas (Barreiro, Centro-Sul, Leste, Nordeste, Noroeste, Norte, Oeste, Pampulha e Venda Nova), como apresentado na tabela \ref{tab:regionais}, será utilizada como base para a segmentação dos dados e análise do espaço urbano. Investigaremos se as particularidades de cada região, como população, área e características socioeconômicas, refletem-se em padrões distintos de uso e ocupação do solo. Essa segmentação permitirá uma análise mais granular e contextualizada, revelando nuances que poderiam passar despercebidas em uma abordagem agregada para toda a cidade. Adicionalmente, a população e a densidade demográfica de cada região servirão como importantes fatores para a interpretação dos resultados da mineração de dados, contextualizando a dinâmica urbana.
+A divisão de Belo Horizonte em nove regionais administrativas (Barreiro, Centro-Sul, Leste, Nordeste, Noroeste, Norte, Oeste, Pampulha e Venda Nova), como apresentado na tabela \ref{tab:regionais}, será utilizada como base para a segmentação dos dados e análise do espaço urbano. O trabalho investiga se as particularidades de cada região, como população, área e características socioeconômicas, refletem em padrões distintos de uso e ocupação do solo detectáveis via a arquitetura proposta. A segmentação permitirá uma análise mais granular e contextualizada, revelando nuances que poderiam passar despercebidas em uma abordagem agregada para toda a cidade. Adicionalmente, a população e a densidade demográfica de cada região servirão como importantes fatores para a interpretação dos resultados da mineração de dados, contextualizando a dinâmica urbana.
 
 Ao todo foram coletados 876.817 registros imobiliários publicados na data de  03/06/2024 com as seguintes características: Nome da regional, índice cadastral, frequência da coleta de lixo, existência de meio fio, existência de via pavimentada, existência de arborização, existência de galeria pluvial, existência de iluminação pública, existência de rede de esgoto, existência de rede de água, existência de rede telefônica, área do terreno,  área construtiva, tipo de construção, tipo de ocupação, padrão de acabamento do imóvel, quantidade de economias, fração ideal, tipo do logradouro, nome do logradouro, número do imóvel, CEP, zona homogenia (classificação do imóvel para critérios de cobrança de imposto), tipologia do imóvel, geometria do terreno, coordenadas de latitude e longitude do centroide da geometria do terreno.
 
-Ao analisar a área construída dos imóveis, foi constado que, ela varia muito em função dos tipos de imóveis. Sendo observado a existência de muitos valores fora do padrão (\textit{outliers}). Sendo assim, uma nova dimensão binária foi adicionada aos dados. O intervalo $I$ foi definido da seguinte forma: $IQR$ o valor interquartil e $q_n$ o valor do enésimo quartil $I = \left[ q_{0,25} - 1.5IQR;q_{0,75} + 1.5IQR  \right]$ . Ao todo foram classificados imóveis 42.849 como sendo \textit{outliers} e 833.968 não. 
+Ao analisar a área construída dos imóveis, foi constado que, ela varia muito em função dos tipos de imóveis. Sendo observado a existência de muitos valores fora do padrão (\textit{outliers}). Sendo assim, uma nova dimensão binária foi adicionada aos dados utilizando o intervalo $I$ definido da seguinte forma: $IQR$ o valor interquartil e $q_n$ o valor do enésimo quartil $I = \left[ q_{0,25} - 1.5IQR;q_{0,75} + 1.5IQR  \right]$. Ao todo foram classificados imóveis 42.849 como sendo \textit{outliers} e 833.968 não. 
 
 \section{Arquitetura de Dutos e Filtros}
 
-\subsection{Primeira Fase: Limpesa e Seleção}
+\subsection{Primeira Fase: Limpeza e Seleção}
 
-Na primeira fase da arquitetura os dados coletados do Portal de Dados Abertos são limpos e corrigidos da seguinte forma: Os campos nulos de área construída foram ajustados para zero caso sejam um lote vago e caso não seja foi utilizada a média da vizinhança. Dados nulos referentes à meio fio, pavimentação e iluminação foram corrigidos por imagens do Google Street View\textregistered. E endereços fora de Belo Horizonte foram removidos.
+Na primeira fase da arquitetura os dados coletados do Portal de Dados Abertos são limpos e corrigidos da seguinte forma: Os campos nulos de área construída foram ajustados para zero caso sejam um lote vago e caso não seja foi utilizada a média da vizinhança. Dados nulos referentes à meio fio, pavimentação e iluminação foram corrigidos por imagens do Google Street View\textregistered. Os endereços fora de Belo Horizonte foram removidos.
 
-\subsection{Segunda Fase: Pré-Processamento}
+\subsection{Segunda Fase: Pré-processamento}
 
-A ferramenta GritBot da empresa RuleQuest Research é uma ferramenta automática que detecta anomalias nos dados, sendo considerada uma precursora dos algoritmos de mineração de dados. A publicação de Bay e Schwabacher \cite{bay2003mining} propuseram uma abordagem focada no desempenho para grandes bases de dados e realiza uma análise comparativa com o GritBot, como conclusão, afirmam que a ferramenta apresenta bons resultados para bases não muito grandes. Sendo assim, ela foi utilizada nos dados de cada regional de forma separada para gerar uma lista de registros anômalos. 
+A ferramenta \href{https://www.rulequest.com/gritbot-info.html}{GritBot} da empresa RuleQuest Research é uma ferramenta automática que detecta anomalias nos dados, sendo considerada uma precursora dos algoritmos de mineração de dados. A publicação de Bay e Schwabacher \cite{bay2003mining} propuseram uma abordagem focada no desempenho para grandes bases de dados e realiza uma análise comparativa com a ferramenta, como conclusão, afirmam que ela apresenta bons resultados para bases não muito grandes. Sendo assim, ela foi utilizada nos dados de cada regional de forma separada para gerar uma lista de registros anômalos. 
 
-\subsection{Tereciera Fase: Transformação dos Dados}
-
+\subsection{Terceira Fase: Transformação dos Dados}
 Para um melhor desempenho dos algoritmos de mineração de dados, a base de dados foi segmentada em nove bases referente aos imóveis de cada regional. As primeiras aplicações de mineração de dados, processavam as informações já transformadas em bancos transacionais. Para os dados geográficos as bases não têm esta propriedade. Sendo assim foi realizado uma avaliação de como transformar o banco de dados em um banco de transações.
 
 \subsubsection{Transações}
@@ -156,7 +158,9 @@ A base de dados possui localidades que não têm CEP (valor do campo igual a zer
  Para descrever as regiões geográficas foi escolhido os algoritmos de mineração de itens frequentes pela sua capacidade interpretativa. O trabalho de Luna et al\cite{luna2019frequent}, traz um excelente retrospectiva. Com base no princípio DCM foram filtrados apenas algoritmos mineração de itemset fechados. Um itemset é considerado fechado se e somente se não existe nenhum super conjunto com o mesmo suporte \cite{lucchese2004mining}. A partir deles é possível gerar todos os itemsets com suporte maior ou igual ao limite informado, porém sem a informação do suporte. Para a arquitetura, foi escolhido o algoritmo FPClose \cite{grahne2005fast} pela eficiência em gerar apenas candidatos válidos. O suporte mínimo de 40\% foi utilizado para reduzir ao máximo o número de resultados.
  
 \paragraph{Resultados}
-Os resultados demonstram muito bem que as regionais mais distantes do Centro da cidade têm a característica de fornecer moradias em sua maioria casas de padrões variando do 2 ao 3. Neste grupo destaca-se a regional Pampulha que apresenta casas com o padrão de acabamento 4. As regionais próximas ao Centro apresentam um padrão misto de moradias de casas e barracões com comércio local. Neste grupo destaca-se a regional Leste que apresentou o maior número de itemsets fechados, com uma grande variação tanto no tipo quanto na qualidade do acabamento dos imóveis. A regional Centro-Sul apresentou todos os itemsets com apenas um item, o que pode ser uma característica do planejamento urbano inicial da Capital Mineira, em que as ruas foram muito bem definidas e segmentadas. A regional possui muitos imóveis de qualidade de acabamento alto e lojas com grandes áreas construídas, o que vai de encontro com a alta intensidade de coleta de lixo, indicando uma intensa atividade comercial. A dinâmica da Capital não foge à dinâmica das grandes cidades em que os subúrbios fornecem moradias e a região central fornece trabalho, o que o algoritmo traz de novo é que as regiões mais próximas ao centro possuem uma quantidade significativa de comércio local e de moradias de baixo padrão construtivo, ao contrário das regiões mais distantes, que predominam apenas casas como moradia. 
+Os resultados demonstram muito bem que as regionais mais distantes do Centro da cidade têm a característica de fornecer moradias em sua maioria casas de padrões variando do 1 ao 3. Neste grupo destaca-se a regional Pampulha que apresenta casas com o padrão de acabamento 4. Com exceção da regionais Oeste e Nordeste que possuem padrões de moradias semelhante ás anteriores, variando apenas o padrão de acabamento, as regionais próximas ao Centro apresentam um padrão misto de moradias de casas e barracões com comércio local com padrão de acabamento variando do 1 ao 3.  Neste grupo destaca-se a regional Leste que apresentou o maior número de itemsets fechados, com uma grande variação tanto no tipo quanto na qualidade do acabamento dos imóveis. A regional Centro-Sul apresentou todos os itemsets com apenas um item, o que pode ser uma característica do planejamento urbano inicial da Capital Mineira, em que as ruas foram muito bem definidas e segmentadas. A regional possui muitos imóveis com acabamento alto e lojas bem segmentadas por CEP, indicando a presença de centro comerciais, o que vai de encontro com a alta intensidade de coleta de lixo, indicando uma intensa atividade humana na área. Somente as regionais Leste e Centro-Sul apresentaram imóveis do tipo apartamento.
+
+A dinâmica da Capital não foge à dinâmica das grandes cidades em que os subúrbios fornecem moradias e a região central fornece trabalho, o que o algoritmo traz de novo é que as regiões mais próximas ao centro possuem uma quantidade significativa de comércio local e de moradias de baixo padrão construtivo, ao contrário das regiões mais distantes, que predominam apenas casas como moradia. 
 
 \subsubsection{Análise dos itemsets estatisticamente relevantes}
 O trabalho de Webb e Vreeken \cite{webb2013efficient} propõe um novo algoritmo, chamado OPUS Miner, para encontrar associações interessantes em dados. Ao contrário de métodos tradicionais que retornam muitos padrões redundantes, o OPUS Miner visa encontrar um conjunto menor de associações autossuficientes que são mais propensas a serem úteis para o usuário. 
@@ -189,18 +193,20 @@ Para avaliar o impacto da existência de lotes vagos em cada regional, o algorit
 Nesta abordagem o que foi avaliado foram o número de itemsets resultantes das duas execuções, caso o impacto de se ter muitos lotes vagos seja significativo o número de itemset da segunda execução será menor.
 
 \paragraph{Resultados}
-Nesta abordagem foi verificado que somente as regionais Pampulha e Norte tiveram um impacto negativo, indicando que elas possuem baixo número de imóveis com pouca área construída, provavelmente baixo índice de edificações e com uma grande área de terrenos vagos próximos a terrenos com construção. Acredita-se que isto se deve à distância do centro da cidade e ao baixo índice de conurbação \cite{wiki:cornubacao}.
+Nesta abordagem foi verificado que somente as regionais Pampulha e Norte tiveram um impacto negativo. Indicando que elas possuem baixo número de imóveis com pouca área construída, provavelmente baixo índice de edificações e com uma grande área de terrenos vagos próximos a terrenos com construção. Acredita-se que isto se deve à distância do centro da capital e ao baixo índice de conurbação \cite{wiki:cornubacao}.
 
 \subsubsection{Análise de subgrupo}
-Para uma abordagem mais profunda dos imóveis da Capital, foi escolhido a análise do tema social de gentrificação \cite{dos2019sapucai, solla2019resistencia, andrade2020urban}. Os estudos citados levam em consideração regiões urbanas limitadas a bairros, para esta análise o objetivo é levantar os imóveis que podem estar em situação social vulnerável dentro de uma região urbana mais extensa, no caso a regional. Para avaliar esta questão, foi utilizado a abordagem de descoberta de subgrupos \cite{atzmueller2015subgroup}. Basicamente ela é uma técnica descritiva que gera subgrupos de um banco de dados que possuem elementos que demonstram comportamentos interessantes em relação a um valor alvo. Para tal o valor alvo escolhido foi o padrão de acabamento 5, o mais alto. A partir do valor alvo apenas a regional Centro-Sul foi escolhida, pois ela contém a grande maioria dos imóveis de alto acabamento, diversidade de tipos construtivos e ocupação.
+Para uma abordagem mais profunda dos imóveis da Capital, foi escolhido a análise do tema social de gentrificação \cite{dos2019sapucai, solla2019resistencia, andrade2020urban}. Os estudos citados levam em consideração regiões urbanas limitadas a bairros, para esta análise o objetivo é levantar os imóveis que podem estar em situação social vulnerável dentro de uma região urbana mais extensa, no caso a regional. Para avaliar esta questão, foi utilizado a abordagem de descoberta de subgrupos \cite{atzmueller2015subgroup}. Ela é uma técnica descritiva que gera subgrupos de um banco de dados que possuem elementos que demonstram comportamentos interessantes em relação a um valor alvo. Para tal o valor alvo escolhido foi o padrão de acabamento 5, o mais alto. A partir do valor alvo apenas a regional Centro-Sul foi escolhida, pois ela contém a grande maioria dos imóveis de alto acabamento, diversidade de tipos construtivos e ocupação.
 
 \paragraph{Criação do Banco de Dados}
-Para a análise de subgrupo um novo banco de dados foi criado. Apenas os imóveis destinados a moradia que não fossem uma vaga de garagem foram escolhidos. Desta forma eles foram agrupados pelas coordenadas geográficas do centroide do terreno. Sendo assim as informações de área construída foi totalizada e para o caso de edifícios ela foi dividida pelo total de economias para obter a área construída média de cada apartamento, a área do terreno, o tipo construtivo e o padrão de acabamento foram sumarizados pelo valor máximo. Ao todo foram coletados 14.956 registros contendo latitude, longitude, área do terreno, área construída, o tipo construtivo e o padrão de acabamento. O banco contém 1.567 registros de imóveis com padrão 5.
+Para a análise de subgrupo um novo banco de dados foi criado. Apenas os imóveis destinados a moradia que não fossem uma vaga de garagem foram escolhidos. Desta forma eles foram agrupados pelas coordenadas geográficas do centroide do terreno. As seguintes informações foram levantadas: área construída foi somada e para o caso de edifícios ela foi dividida pelo total de economias para obter a área construída média por núcleo familiar, a área do terreno, o tipo construtivo e o padrão de acabamento foram sumarizados pelo valor máximo. Ao todo foram coletados 14.956, sendo 1.567 registros de imóveis com padrão 5.
 
 \paragraph{Configuração do Cortana}
-Para configurar o Cortana foi escolhida a variável padrão de acabamento com o valor alvo P5; com a medidade de qualidade de Jaccard com valor mínimo de 0,2; com a profundidade 5; estratégia best first; estratégia numérica best
+Para configurar o Cortana foi escolhida a variável padrão de acabamento com o valor alvo P5; com a medida de qualidade de Jaccard com valor mínimo de 0,2; com a profundidade 5; estratégia best first; estratégia numérica best.
+
 \paragraph{Resultados}
-Foram gerados 2993 subgrupos todos eles com a medida de qualidade variando de 0,44 à 0,2. Sendo assim iremos analisar o primeiro subgrupo.
+Foram gerados 2.993 subgrupos todos eles com a medida de qualidade variando de 0,44 à 0,2. Sendo assim iremos analisar o primeiro subgrupo.
+
 \begin{table}[ht]
 \centering
 \label{table:sub}
@@ -212,9 +218,9 @@ Foram gerados 2993 subgrupos todos eles com a medida de qualidade variando de 0,
 \end{table}
 
 \begin{gather*}
-423.0 <= Area \quad Construida <= 3444.27  \quad \land \\ Latitude <= 614227.2 \land Area \quad Terreno >= 441.0  \land Longitude <= 7796076.5
+423.0 <= \acute{A}rea \quad Construida <= 3444.27  \quad \land \\ Latitude <= 614227.2 \land \acute{A}rea \quad Terreno >= 441.0  \land Longitude <= 7796076.5
 \end{gather*}
-\begin{table}[ht]
+\begin{table}[!htbp]
 \centering
 \label{table:sub-aca}
 \begin{tabular}{cc}
@@ -225,7 +231,8 @@ Foram gerados 2993 subgrupos todos eles com a medida de qualidade variando de 0,
 \end{tabular}
 \caption{Total de registros por acabamento}
 \end{table}
-Ao filtramos os dados originais verificamos os seguintes logradouros com potencial foco de gentrificação: rua Cervantes, avenida Nossa Senhora do Carmo e rua Claudio Manuel. A análise de subgrupo apresenta a vantagem de permitir que o processo social da gentrificação seja analisado em diversos níveis, não somente entre os extremos como foi feita esta análise. E em localidades geralmente associados a imóveis de alto padrão.
+
+Ao filtrar os dados originais verifica-se os seguintes logradouros com potencial foco de gentrificação: rua Cervantes, avenida Nossa Senhora do Carmo e rua Claudio Manuel. A análise de subgrupo apresenta a vantagem de permitir que o processo social da gentrificação seja analisado em diversos níveis, não somente entre os extremos como foi feita esta análise. E em localidades geralmente associados a imóveis de alto padrão.
 
 \subsection{Quarta Fase: Conhecimento}
 As fases da arquitetura demonstraram ser capazes de extrair conhecimento mais amplos até os mais detalhados, como por exemplo encontrar padrões de imóveis que podem estar mais sujeitos a certos processos sociais. Esta fase constitui-se do relatório final contendo todo o conhecimento gerado.
@@ -233,16 +240,16 @@ As fases da arquitetura demonstraram ser capazes de extrair conhecimento mais am
 \section{Respostas}
 \paragraph{P1} Os algoritmos de mineração de dados mais úteis para descrever uma base de dados foram: FPMax, OpusMiner, FHM Freq, FHN e Descoberta de Subgrupo. Esta sequência de algoritmos descrevem os dados de forma mais genérica à mais específica. Com um mínimo de hiper parâmetros e um mínimo de resultados, todos os algoritmos geraram resultados de extrema importância para descrever o espaço urbano da Capital Mineira.
 \paragraph{P2} Eles conseguem em sequência gerarem um conjunto de informações mais genéricas até as mais específicas.
-\paragraph{P3} A melhor sequência de execução dos algoritmos foi a apresentada no trabalho, a grande importância do trabalho foi que para utilizar o algoritmo de descoberta de subgrupos de forma mais eficiênte, a melhor forma é compreender a base de dados para segmentar muito bem os registros que serão processados. Diminuído o tempo de execução e melhorando a qualidade do resultado.
+\paragraph{P3} A melhor sequência de execução dos algoritmos foi a apresentada no trabalho, a grande importância do trabalho foi que para utilizar o algoritmo de descoberta de subgrupos de forma mais eficiente, a melhor forma é compreender a base de dados para segmentar muito bem os registros que serão processados. Diminuído o tempo de execução e melhorando a qualidade do resultado.
 
 \section{Conclusão}
-Este trabalho demonstrou a eficácia de uma arquitetura de dutos e filtros com algoritmos de mineração de dados para descrever o espaço urbano de Belo Horizonte de forma compacta, revelando padrões e tendências no uso e ocupação do solo a partir de dados imobiliários. A clara distinção entre as regiões centrais e periféricas, a importância de fatores como a presença de vagas de garagem para imóveis comerciais de alto padrão e a identificação de áreas potencialmente vulneráveis à gentrificação ilustram o potencial da abordagem.
+O trabalho demonstrou a eficácia de uma arquitetura de dutos e filtros com algoritmos de mineração de dados para descrever o espaço urbano de Belo Horizonte de forma compacta, revelando padrões e tendências no uso e ocupação do solo a partir dos dados imobiliários. A clara distinção entre as regiões centrais e periféricas, a importância de fatores como a presença de vagas de garagem para imóveis comerciais de alto padrão e a identificação de áreas potencialmente vulneráveis à gentrificação ilustram o potencial da abordagem.
 
 A segmentação da análise por regionais administrativas permitiu observar nuances na dinâmica urbana, evidenciando a importância de se considerar as particularidades de cada área na formulação de políticas públicas. A utilização de algoritmos como FPClose, OPUS Miner, FHM Freq, FHN além da análise de subgrupos com o Cortana, demonstrou a versatilidade da mineração de dados para responder a diferentes perguntas de pesquisa no contexto do planejamento urbano.
 
 Apesar dos resultados promissores, a pesquisa apresenta limitações. A base de dados utilizada, embora extensa, representa um retrato estático da cidade e não captura a dinâmica temporal das transformações urbanas, os resultados devem ser avaliados por especialistas e outras bases deveriam ser utilizadas. A análise se concentrou em variáveis relacionadas aos imóveis, sendo necessária, também, a incorporação de outras dimensões, como dados socioeconômicos e de infraestrutura, para uma compreensão mais abrangente do espaço urbano.
 
-Como trabalhos futuros, destaca-se a incorporação de dados espaço-temporais para análise de séries históricas, permitindo identificar tendências e prever cenários futuros de uso e ocupação do solo. A integração com outras fontes de dados, como redes sociais e imagens de satélite, também apresenta grande potencial para enriquecer a análise e gerar conhecimento ainda mais aprofundado sobre a dinâmica urbana. E uso de outras técnicas de mineração de dados como a mineração de dados de mesma localidade, para evitar a segmentação por regionais.
+Como trabalhos futuros, destaca-se a incorporação de dados espaçotemporais para análise de séries históricas, permitindo identificar tendências e prever cenários futuros de uso e ocupação do solo. A integração com outras fontes de dados, como redes sociais e imagens de satélite, também apresenta grande potencial para enriquecer a análise e gerar conhecimento ainda mais aprofundado sobre a dinâmica urbana. E uso de outras técnicas de mineração de dados como a mineração de dados de mesma localidade, para evitar a segmentação por regionais.
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
