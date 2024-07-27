@@ -17,39 +17,23 @@ Nr.|Depth|Coverage|Quality|Probability|Positives|Conditions
 6|5|5956|11,85%|74,87%|4459|Y >= 7793407.0 AND AREA_TERRENO >= 361.46 AND Y <= 7797546.5 AND X <= 613161.7 AND AREA_CONSTRUCAO <= 738.49
 
 O resultado 2 foi escolhido para filtrar a base dos registros imoboliários para selecionar os imóveis que se enquadram neste resultado e que possui padrão de qualidade P1. Os resulgados foram agrupados pela zona homogenia e o campo número de economias, que para o caso de residências significa o total de famílias, foi somado gerando a seguinte tabela.
-Zone Homogenia| Total
+Zona Homogenia| Total
 --|--
-CS101|1
-CS111|1
-CS120|1
-CS124|1
-CS206|1
-CS213|1
-CS302|1
-CS409|1
-CS418|1
-CS117|2
-CS129|2
-CS208|2
-CS406|2
-CS416|2
-CS118|3
-CS315|3
-LE225|3
+CS101, CS111, CS120, CS124, CS206, CS213, CS302, CS409, CS418|1
+CS117, CS129, CS208, CS406, CS416|2
+CS118, CS315, LE225|3
 CS305|5
 CS106|7
 CS306|8
 CS412|9
 CS407|10
 CS313|12
-CS210|13
-CS212|13
+CS210, CS212|13
 CS411|23
 
 ### Exmplo de Imóvel Encontrado
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/gentrificacao.png)
 
 ### Mapa
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/cortana.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/cortana2.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/cortana-ap.png)
 
