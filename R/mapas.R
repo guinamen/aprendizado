@@ -1,3 +1,4 @@
+library('Cairo')
 suppressMessages(library(sf))
 suppressMessages(library(ggplot2))
 suppressMessages(library(dplyr))
@@ -5,6 +6,14 @@ suppressMessages(library(ggspatial))
 suppressMessages(library(extrafont))
 library(igraph)
 suppressMessages(loadfonts())
+knitr::opts_knit$set(dev.args = list(type = "cairo"))
+trace(grDevices:::png, quote({
+  if (missing(type) && missing(antialias)) {
+    type <- "cairo-png"
+    antialias <- "subpixel"
+  }
+}), print = FALSE)
+
 regionais <- st_read("Mapas/BH/Regionais/REGIONAL.shp", options = "ENCODING=windows-1252")
 #bairros <- st_read("/home/guilherme/R/Mapas/BH/Bairros/BAIRRO.shp", options = "ENCODING=windows-1252")
 #ss_centroids <- st_centroid(regionais)
@@ -18,7 +27,7 @@ p <- regionais %>%
   geom_sf(aes(fill = AREA_KM2)) + 
   labs(title="Belo Horizonte",
        x ="Latitude",
-       y = "Latitude",
+       y = "Longitude",
        fill="Km²",
        caption = "Fonte: BHMap PRODABEL PBH",
        subtitle = "Regionais - Área Geográfica") +
