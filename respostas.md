@@ -1,6 +1,9 @@
 # Respostas
 
-## Pergunta 1: Quais são as características básicas das regiões imobiliárias de Belo Horizonte?
+## Pergunta 1: Quais os algoritmos de mineração de dados são úteis para descrever uma base de dados urbanos?
+Os algoritmos de mineração de dados mais úteis para descrever uma base de dados foram: FPMax, OpusMiner, FHM Freq, FHN e Descoberta de Subgrupo.
+Esta sequência de algoritmos descrevem os dados de forma mais genérica à mais específica. Com um mínimo de hiper parâmetros e um mínimo de resultados, todos os algoritmos geraram resultados de extrema importância para descrever o espaço urbano da Capital Mineira.
+
 **Análise dos Algoritmos**
 
 **FPMax**
@@ -40,3 +43,9 @@ O objetivo desta análise é verificar o impacto negativo da presença de lotes 
 **Cortana**
 
 O algoritmo de busca de subgroupos demonstrou muita importância para verificar imóvies de baixo padrão de acabamento próximo à imóveis de alto padrão de acabamento, demonstrando que mesmo na Regional Centro-Sul existem diversidades que podem indicar formas de atuação de programas sociais e para o setor da construção civil os locais nos quais existem boas áreas para se construir indicando o tipo, padrão, área construtiva, possibilitando uma melhor atuação no mercado e para Prefeitura indica possíveis imóveis que devem ser reclassificados em seu padrão de acabamento possibilitando um IPTU mais justo. Por questões de tempo este algoritmo foi executado apenas para a regional Centro-Sul. Mas seria indicado a execução do mesmo algoritmo e parâmetros nas regionais Leste por ser a que tem maior diversidade imobiliária e na regional Pampulha a onde há uma grande quantidade de casas de alto padrão de acabamento.
+
+## Pergunta 2: Quais informações eles podem gerar?
+Eles conseguem, em sequência, gerar um conjunto de informações mais genéricas até as mais específicas.
+
+## Pergunta 3: Qual é a melhor sequência de algoritmos para descrever os dados e formar a arquitetura de dutos?
+A melhor sequência de execução dos algoritmos foi a apresentada no trabalho, a grande importância do trabalho foi que para utilizar o algoritmo de descoberta de subgrupos de forma mais eficiente, a melhor forma é compreender a base de dados para segmentar muito bem os registros que serão processados. Diminuído o tempo de execução e melhorando a qualidade do resultado.
