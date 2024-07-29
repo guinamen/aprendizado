@@ -22,7 +22,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{parskip}
 \usepackage{enumitem}
-\usepackage{amsmath}
 \usepackage{hyperref}
 
 \newlist{questions}{enumerate}{2}
@@ -199,48 +198,53 @@ Nesta abordagem foi verificado que somente as regionais Pampulha e Norte tiveram
 Para uma abordagem mais profunda dos imóveis da Capital, foi escolhido a análise do tema social de gentrificação \cite{dos2019sapucai, solla2019resistencia, andrade2020urban}. Os estudos citados levam em consideração regiões urbanas limitadas a bairros, para esta análise o objetivo é levantar os imóveis que podem estar em situação social vulnerável dentro de uma região urbana mais extensa, no caso a regional. Para avaliar esta questão, foi utilizado a abordagem de descoberta de subgrupos \cite{atzmueller2015subgroup}. Ela é uma técnica descritiva que gera subgrupos de um banco de dados que possuem elementos que demonstram comportamentos interessantes em relação a um valor alvo. Para tal o valor alvo escolhido foi o padrão de acabamento 5, o mais alto. A partir do valor alvo apenas a regional Centro-Sul foi escolhida, pois ela contém a grande maioria dos imóveis de alto acabamento, diversidade de tipos construtivos e ocupação.
 
 \paragraph{Criação do Banco de Dados}
-Para a análise de subgrupo um novo banco de dados foi criado. Apenas os imóveis destinados a moradia que não fossem uma vaga de garagem foram escolhidos. Desta forma eles foram agrupados pelas coordenadas geográficas do centroide do terreno. As seguintes informações foram levantadas: área construída foi somada e para o caso de edifícios ela foi dividida pelo total de economias para obter a área construída média por núcleo familiar, a área do terreno, o tipo construtivo e o padrão de acabamento foram sumarizados pelo valor máximo. Ao todo foram coletados 14.956, sendo 1.567 registros de imóveis com padrão 5.
+Para a análise de subgrupo um novo banco de dados foi criado. Apenas os imóveis destinados a moradia que não fossem uma vaga de garagem foram escolhidos. Desta forma eles foram agrupados pelas coordenadas geográficas do centroide do terreno. As seguintes informações foram sumarizadas: área construída foi somada e para o caso de edifícios ela foi dividida pelo total de economias para obter a área construída média por núcleo familiar, a área do terreno, o tipo construtivo e o padrão de acabamento foram sumarizados pelo valor máximo. Ao todo foram coletados 14.956, sendo 1.567 registros de imóveis com padrão 5.
 
 \paragraph{Configuração do Cortana}
 Para configurar o Cortana foi escolhida a variável padrão de acabamento com o valor alvo P5; com a medida de qualidade de Jaccard com valor mínimo de 0,2; com a profundidade 5; estratégia best first; estratégia numérica best.
 
 \paragraph{Resultados}
-Foram gerados 2.993 subgrupos todos eles com a medida de qualidade variando de 0,44 à 0,2. Sendo assim iremos analisar o primeiro subgrupo.
+Foram gerados 2.993 subgrupos todos eles com a medida de qualidade variando de 0,44 à 0,2. Sendo assim iremos analisar o terceiro subgrupo, por ter sido menos redundante.
 
 \begin{table}[ht]
 \centering
 \label{table:sub}
-\begin{tabular}{cccc}
- Cobertura & Qualidade & Probabilidade & Positivos  \\
- 2209 & 0,44 & 0,52  &  1.159  \\
+\scalebox{0.8}{
+\begin{tabular}{ccccp{8cm}}
+ Cobertura & Qualidade & Probabilidade & Positivos & Regra  \\
+ \hline
+ \hline
+ 2.209 & 0,44 & 0,52  &  1.159 & Construção $>=$ 423.0 $\land$ Terreno $>=$ 441.0 $\land$ \newline Logitude $<=$ 7796076.5 $\land$ \newline 608975.7 $<=$ Latitude $>=$ 614227 \\
+ \hline
 \end{tabular}
-\caption{Primeiro Sub Grupo}
+}
+\caption{Subgrupo escolhido}
 \end{table}
 
-\begin{gather*}
-423.0 <= \acute{A}rea \quad Construida <= 3444.27  \quad \land \\ Latitude <= 614227.2 \land \acute{A}rea \quad Terreno >= 441.0  \land Longitude <= 7796076.5
-\end{gather*}
 \begin{table}[!htbp]
 \centering
 \label{table:sub-aca}
 \begin{tabular}{cc}
- Padrão Acabamento & Total  \\
- 1 e 2 & 24 \\
- 3 & 276 \\
- 4 e 5 & 1.909 \\
+ Padrão Acabamento & Registros Imobiliários  \\
+ 1 e 2 & 31 \\
+ 3 & 303 \\
+ 4 e 5 & 3.815 \\
 \end{tabular}
-\caption{Total de registros por acabamento}
+\caption{Regra aplicada aos dados originais}
 \end{table}
 
-Ao filtrar os dados originais verifica-se os seguintes logradouros com potencial foco de gentrificação: rua Cervantes, avenida Nossa Senhora do Carmo e rua Claudio Manuel. A análise de subgrupo apresenta a vantagem de permitir que o processo social da gentrificação seja analisado em diversos níveis, não somente entre os extremos como foi feita esta análise. E em localidades geralmente associados a imóveis de alto padrão.
+Para analizar os fenômeno da gentrificação o filtro de área construída foi removido para obter residências menores, os registros foram agrupados pela zona homogênia e sumarizado pelo total de núcleos familiares. Os seguintes bairros com maior potencial foco de gentrificação foram: São Lucas, São Pedro, Vila Acaba Mundo e Funcionários.
+
+A análise de subgrupo apresenta a vantagem de permitir que o processo social da gentrificação seja analisado em diversos níveis, não somente entre os extremos como foi feita esta análise. E em localidades geralmente associados a imóveis de alto padrão.
 
 \subsection{Quarta Fase: Conhecimento}
-As fases da arquitetura demonstraram ser capazes de extrair conhecimento mais amplos até os mais detalhados, como por exemplo encontrar padrões de imóveis que podem estar mais sujeitos a certos processos sociais. Esta fase constitui-se do relatório final contendo todo o conhecimento gerado.
+As fases da arquitetura demonstraram ser capazes de extrair conhecimento mais amplos até os mais detalhados, como por exemplo encontrar padrões de imóveis que podem estar mais sujeitos a certos processos sociais. Esta fase constitui-se do relatório final contendo todo o conhecimento gerado. Para mais detalhe acessar os resutlados no repositório \href{https://github.com/guinamen/aprendizado}{https://github.com/guinamen/aprendizado}
 
 \section{Respostas}
 \paragraph{P1} Os algoritmos de mineração de dados mais úteis para descrever uma base de dados foram: FPMax, OpusMiner, FHM Freq, FHN e Descoberta de Subgrupo. Esta sequência de algoritmos descrevem os dados de forma mais genérica à mais específica. Com um mínimo de hiper parâmetros e um mínimo de resultados, todos os algoritmos geraram resultados de extrema importância para descrever o espaço urbano da Capital Mineira.
-\paragraph{P2} Eles conseguem em sequência gerarem um conjunto de informações mais genéricas até as mais específicas.
+\paragraph{P2} Eles conseguem, na sequência proposta, gerar um conjunto de informações em vários níveis, do mais amplo ao mais expecífico.
 \paragraph{P3} A melhor sequência de execução dos algoritmos foi a apresentada no trabalho, a grande importância do trabalho foi que para utilizar o algoritmo de descoberta de subgrupos de forma mais eficiente, a melhor forma é compreender a base de dados para segmentar muito bem os registros que serão processados. Diminuído o tempo de execução e melhorando a qualidade do resultado.
+
 
 \section{Conclusão}
 O trabalho demonstrou a eficácia de uma arquitetura de dutos e filtros com algoritmos de mineração de dados para descrever o espaço urbano de Belo Horizonte de forma compacta, revelando padrões e tendências no uso e ocupação do solo a partir dos dados imobiliários. A clara distinção entre as regiões centrais e periféricas, a importância de fatores como a presença de vagas de garagem para imóveis comerciais de alto padrão e a identificação de áreas potencialmente vulneráveis à gentrificação ilustram o potencial da abordagem.
