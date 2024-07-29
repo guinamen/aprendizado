@@ -47,7 +47,7 @@ q <- regionais %>% ggplot() +
   geom_sf(aes(fill = POPULACAO)) + 
   labs(title="Belo Horizonte",
        x ="Latitude",
-       y = "Latitude",
+       y = "Longitude",
        fill="População",
        caption = "Fonte: BHMap PRODABEL PBH e IBGE Censo 2010",
        subtitle = "Regionais - População") +
@@ -67,7 +67,7 @@ r <- regionais %>% ggplot() +
   geom_sf(aes(fill = AREA_CONSTRUIDA / 1000000)) + 
   labs(title="Belo Horizonte",
        x ="Latitude",
-       y = "Latitude",
+       y = "Longitude",
        fill="Km²",
        caption = "Fonte: BHMap Dados Abertos PRODABEL PBH",
        subtitle = "Regionais - Área Construída") +
