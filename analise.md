@@ -39,14 +39,14 @@ I=[q0.25−1.5⋅IQR; q0.75+1.5⋅IQR]
 Ao todo foram classficados 42.849 imóveis como sendo outiliers e 833.968 não.
 
 ## Características das Regionais
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/area.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/populacao.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/area_construida.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/grafo.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/area.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/populacao.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/area_construida.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/grafo.png)
 
 ## Características dos Imóveis
 
-![alt Perfil da Coleta de Lixo por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/coleta.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/perfil.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/ocupacao.png)
-![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/master/Imagens/acabamento.png)
+![alt Perfil da Coleta de Lixo por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/coleta.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/perfil.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/ocupacao.png)
+![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/acabamento.png)
