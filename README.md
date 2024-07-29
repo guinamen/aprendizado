@@ -61,5 +61,6 @@
 - [Algoritmo OpusMiner (Itemset com alta correlação estatística)](opusminer.md)
 - [Algoritmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
 - [Algoritmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
-- [Cortana (Busca por subgrupos)](subgrupo.md)
+- [Cortana (Busca por subgrupos - Apartamento)](subgrupo.md)
+- [Cortana (Busca por subgrupos - Alto Padrão)](subgrupo.md)
 ## [Respostas](respostas.md)
