@@ -27,7 +27,7 @@ CEP| CEP| Inteiro| Código dos correios
 Tipologia| TIPOLOGIA| Texto| Tipo de logradouro como rua, avenida, dentre outros
 Geometria| GEOMETRIA| Polígono| Polígono do terreno
 
-
+### Número de registros
 Barreiro|Centro-Sul|Leste|Nordeste|Noroeste|Norte|Oeste|Pampulha|Venda Nova | **Total**
 --|--|--|--|--|--|--|--|--|--
 65390|220991|67561|87187|81741|51240|124864|108035|69808| **876817**
