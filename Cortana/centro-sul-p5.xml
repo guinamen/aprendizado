@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE autorun SYSTEM "autorun.dtd">
+<autorun nr_experiments="1">
+  <experiment id="0">
+    <target_concept>
+      <nr_target_attributes>1</nr_target_attributes>
+      <target_type>single nominal</target_type>
+      <primary_target>PADRAO_ACABAMENTO</primary_target>
+      <target_value>P5</target_value>
+      <secondary_target/>
+      <multi_targets/>
+    </target_concept>
+    <search_parameters>
+      <quality_measure>Jaccard</quality_measure>
+      <quality_measure_minimum>0.2</quality_measure_minimum>
+      <search_depth>5</search_depth>
+      <minimum_coverage>2</minimum_coverage>
+      <maximum_coverage_fraction>1.0</maximum_coverage_fraction>
+      <maximum_subgroups>0</maximum_subgroups>
+      <maximum_time>10.0</maximum_time>
+      <search_strategy>best first</search_strategy>
+      <use_nominal_sets>false</use_nominal_sets>
+      <search_strategy_width>100</search_strategy_width>
+      <numeric_operators>&lt;html&gt;&amp;#8804;, &amp;#8805;&lt;/html&gt;</numeric_operators>
+      <numeric_strategy>best</numeric_strategy>
+      <nr_bins>8</nr_bins>
+      <nr_threads>8</nr_threads>
+      <alpha>0.5</alpha>
+      <beta>1.0</beta>
+      <post_processing_do_autorun>true</post_processing_do_autorun>
+      <post_processing_count>20</post_processing_count>
+    </search_parameters>
+    <table>
+      <table_name>Centro-Sul</table_name>
+      <source>Centro-Sul.csv</source>
+      <column>
+        <type>numeric</type>
+        <name>X</name>
+        <short/>
+        <index>0</index>
+        <missing_value>0.0</missing_value>
+        <enabled>true</enabled>
+      </column>
+      <column>
+        <type>numeric</type>
+        <name>Y</name>
+        <short/>
+        <index>1</index>
+        <missing_value>0.0</missing_value>
+        <enabled>true</enabled>
+      </column>
+      <column>
+        <type>numeric</type>
+        <name>AREA_TERRENO</name>
+        <short/>
+        <index>2</index>
+        <missing_value>0.0</missing_value>
+        <enabled>true</enabled>
+      </column>
+      <column>
+        <type>numeric</type>
+        <name>AREA_CONSTRUCAO</name>
+        <short/>
+        <index>3</index>
+        <missing_value>0.0</missing_value>
+        <enabled>true</enabled>
+      </column>
+      <column>
+        <type>nominal</type>
+        <name>TIPO_CONSTRUTIVO</name>
+        <short/>
+        <index>4</index>
+        <missing_value>?</missing_value>
+        <enabled>true</enabled>
+      </column>
+      <column>
+        <type>nominal</type>
+        <name>PADRAO_ACABAMENTO</name>
+        <short/>
+        <index>5</index>
+        <missing_value>?</missing_value>
+        <enabled>true</enabled>
+      </column>
+    </table>
+  </experiment>
+</autorun>
