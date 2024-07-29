@@ -1,0 +1,21 @@
+\babel@toc {brazil}{}
+\babel@toc {brazil}{}
+\beamer@sectionintoc {2}{Introdução}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Questionamentos}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{Objetivos}{5}{0}{1}
+\beamer@sectionintoc {3}{Processamentos dos Dados}{6}{0}{2}
+\beamer@subsectionintoc {3}{1}{Coleta}{6}{0}{2}
+\beamer@subsectionintoc {3}{2}{As Regionais de Belo Horizonte}{8}{0}{2}
+\beamer@subsectionintoc {3}{3}{Características}{10}{0}{2}
+\beamer@sectionintoc {4}{Metodologia}{14}{0}{3}
+\beamer@subsectionintoc {4}{1}{Arquitetura de Dutos e Filtros}{15}{0}{3}
+\beamer@sectionintoc {5}{Resultados}{18}{0}{4}
+\beamer@subsectionintoc {5}{1}{Itemsets Frequênts}{18}{0}{4}
+\beamer@subsectionintoc {5}{2}{Itemsets estatisticamente relevantes}{19}{0}{4}
+\beamer@subsectionintoc {5}{3}{Utilidade em m² construídos}{20}{0}{4}
+\beamer@subsectionintoc {5}{4}{Utilidade negativa m²}{22}{0}{4}
+\beamer@subsectionintoc {5}{5}{Descoberta de Subgrupo - Alvo Padrão de Acabamento P5}{23}{0}{4}
+\beamer@subsectionintoc {5}{6}{Descoberta de Subgrupo - Alvo Tipo Construtivo Apartamento}{24}{0}{4}
+\beamer@subsectionintoc {5}{7}{Descoberta de Subgrupo - Gentrificação}{25}{0}{4}
+\beamer@subsectionintoc {5}{8}{Gentrificação}{26}{0}{4}
+\beamer@sectionintoc {6}{Conclusão e Trabalhos Futuros}{27}{0}{5}

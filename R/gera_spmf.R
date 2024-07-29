@@ -27,14 +27,18 @@ gera_preambulo <- function(arquivo, tipos) {
   close(fileConn)
 }
 
+
+le_outliers <- function(regional) {
+  read.table(
+    paste("GritBot/", tolower(gsub(" ", "_", regional)), ".txt", sep = "" ),
+    col.names = c('REGIONAL'), sep = ',')
+}
+
 gera_item_set <- function(regional, indices, tabela) {
-  outliers <- read.csv(
-    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
-    col.names = 'REGIONAL')
   rbind(
     tabela %>%
-      anti_join(outliers) %>%
       filter(REGIONAL == regional) %>%
+      anti_join(le_outliers(regional)) %>%
       inner_join(indices) %>%
       group_by(CEP) %>%
       summarise(
@@ -54,13 +58,10 @@ gera_item_set <- function(regional, indices, tabela) {
 }
 
 gera_utilidade_positiva <- function(regional, indices, tabela) {
-  outliers <- read.csv(
-    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
-    col.names = 'REGIONAL')
   rbind(
     tabela %>%
-      anti_join(outliers) %>%
       filter(REGIONAL == regional & CEP > 0 & AREA_CONSTRUCAO > 0) %>%
+      anti_join(le_outliers(regional)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
       summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
@@ -88,13 +89,10 @@ gera_utilidade_positiva <- function(regional, indices, tabela) {
 }
 
 gera_utilidade_negativa <- function(regional, indices, tabela) {
-  outliers <- read.csv(
-    paste("GritBot/", tolower('Barreiro'), ".txt", sep = "" ),
-    col.names = 'REGIONAL')
   rbind(
     tabela %>%
-      anti_join(outliers) %>%
       filter(REGIONAL == regional & CEP > 0) %>%
+      anti_join(le_outliers(regional)) %>%
       mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO, AREA_CONSTRUCAO)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
@@ -123,11 +121,51 @@ gera_utilidade_negativa <- function(regional, indices, tabela) {
   )  
 }
 
-grava_arquivo_spmf <- function(arquivo, tipos, dados) {
-  gera_preambulo(arquivo, tipos)
+gera_utilidade_sequencial <- function(regional, indices, tabela) {
+  tabela %>% filter(REGIONAL == regional &  !is.na(NUMERO_IMOVEL) & CEP > 0) %>%
+    anti_join(le_outliers(regional)) %>%
+    group_by(
+      TIPO_LOGRADOURO,
+      NOME_LOGRADOURO,
+      NUMERO_IMOVEL,
+      TIPO_CONSTRUTIVO,
+      PADRAO_ACABAMENTO,
+      OUTLIER, .groups = 'drop') %>%
+    summarise(AREA_CONSTRUCAO=sum(round(AREA_CONSTRUCAO)), .groups = 'drop') %>%
+    inner_join(indices) %>%
+    group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO) %>%
+    summarise(
+      ITEM_SET = gera_transacao_utilidade(INDICE, AREA_CONSTRUCAO),
+      UTILIDADE_TOTAL = as.integer(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
+    select(ITEM_SET, UTILIDADE_TOTAL)
+  
+}
+
+gera_transacao_utilidade <- function(item, utilidade, n = 5) {
+  lacos = length(item) %/% n + ifelse(length(item) %% n == 0, 0, 1 )
+  transacao = c()
+  inicio = 1
+  fim = n
+  for (i in 1:lacos) {
+    agregado = aggregate(.~ITEM, data.frame(ITEM=item[inicio:fim], UTILIDADE=utilidade[inicio:fim]), sum)
+    for (j in 1:nrow(agregado)) {
+      elemento = paste0(agregado[j,1],"[", agregado[j,2],"]", " ")
+      transacao = append(transacao, elemento)
+    }
+    transacao = append(transacao, "-1")
+    inicio = inicio + n
+    fim = ifelse(fim + n < length(item),fim + n, length(item) )
+  }
+  return(paste(paste(transacao, collapse = ' '), ' -2', collapse = '' ))
+}
+
+grava_arquivo_spmf <- function(arquivo, tipos, dados, sep = ':', gera_preambulo=TRUE) {
+  if (gera_preambulo ) {
+    gera_preambulo(arquivo, tipos)
+  }
   write.table(dados,
               file = arquivo,
-              sep = ":",
+              sep,
               col.names = FALSE,
               row.names = FALSE,
               quote = FALSE,

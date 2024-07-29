@@ -9,7 +9,7 @@
 2. - [X] Fazer análise dos dados.​
 3. - [X] Gerar arquivos no formato do SPMF.​
 4. - [X] Testar os algoritmos.​
-5. - [ ] Responder as perguntas.
+5. - [X] Responder as perguntas.
 
 ### Coleta de Dados​
 - [x] Extraídos os arquivos de imóveis das regionais no ​[Portal de Dados abertos da PBH](https://ckan.pbh.gov.br/).
@@ -50,8 +50,8 @@
 
 ### Responder as perguntas
 - [X] Pergunta 1
-- [ ] Pergunta 2
-- [ ] Pergunta 3
+- [X] Pergunta 2
+- [X] Pergunta 3
 
 ## [Metodologia GQM](gqm.md)
 ## [Análise](analise.md)

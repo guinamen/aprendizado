@@ -8,11 +8,11 @@ O objetivo deste processo é realizar uma análise comparativo entreas as Bases 
 
 Regional| Base 1 - Total de Itemset| Base 2 - Total de Itemset | Utilidade Mínima
 --|--|--|--
-Barreiro| 1627 | 1625 | 1Km²
+Barreiro| 1.627 | 1.625 | 1Km²
 Centro-Sul| 19.170 | 21.934 | 1Km²
-Leste| 2723| 3344 | 1Km²
+Leste| 2.723| 3.344 | 1Km²
 Nordeste| 978 | 976 | 1Km²
-Noroeste|4.152 | 5012 | 1Km²
+Noroeste|4.150 | 5.012 | 1Km²
 Norte|184|12 | 1Km²
 Oeste|633|743 | 1Km²
 Pampulha|400|63 | 1Km²

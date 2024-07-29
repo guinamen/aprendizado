@@ -1,0 +1,51 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Andrade e Mendon{\c{c}}a 2020]{andrade2020urban}
+\abntrefinfo{Andrade e Mendon{\c{c}}a}{ANDRADE; MENDON{\c{C}}A}{2020}
+{ANDRADE, L. T.~d.; MENDON{\c{C}}A, J. G.~d. Urban policies, mobility and
+  gentrification in two neighbourhoods of belo horizonte 1.
+\textbf{Sociologia \& Antropologia}, SciELO Brasil, v.~10, p. 561--586, 2020.}
+
+\bibitem[Caldiera e Rombach 1994]{caldiera1994goal}
+\abntrefinfo{Caldiera e Rombach}{CALDIERA; ROMBACH}{1994}
+{CALDIERA, V. R. B.~G.; ROMBACH, H.~D. The goal question metric approach.
+\textbf{Encyclopedia of software engineering}, p. 528--532, 1994.}
+
+\bibitem[Nwagu, Omankwu e Inyiama 2017]{nwagu2017knowledge}
+\abntrefinfo{Nwagu, Omankwu e Inyiama}{NWAGU; OMANKWU; INYIAMA}{2017}
+{NWAGU, C.~K.; OMANKWU, O.~C.; INYIAMA, H. Knowledge discovery in databases
+  (kdd): an overview.
+\textbf{Int J Comput Sci Inf Secur (IJCSIS)}, v.~15, n.~12, p. 13--16, 2017.}
+
+\bibitem[Proen{\c{c}}a 2021]{proencca2021robust}
+\abntrefinfo{Proen{\c{c}}a}{PROEN{\c{C}}A}{2021}
+{PROEN{\c{C}}A, H.~M.
+\textbf{Robust rules for prediction and description}.
+Tese (Doutorado) --- PhD thesis, Leiden University, https://hdl. handle.
+  net/1887/3220882, 2021.}
+
+\bibitem[Solla 2019]{solla2019resistencia}
+\abntrefinfo{Solla}{SOLLA}{2019}
+{SOLLA, L. F.~S.
+\textbf{Resist{\^e}ncia {\`a} gentrifica{\c{c}}{\~a}o?: Estudo de Caso do
+  Bairro Bonfim em Belo Horizonte}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Minas Gerais, 2019.}
+
+\bibitem[Sommerville 2011]{sommerville2011software}
+\abntrefinfo{Sommerville}{SOMMERVILLE}{2011}
+{SOMMERVILLE, I. Software engineering (ed.).
+\textbf{America: Pearson Education Inc}, 2011.}
+
+\bibitem[Veloso e Andrade 2019]{dos2019sapucai}
+\abntrefinfo{Veloso e Andrade}{VELOSO; ANDRADE}{2019}
+{VELOSO, C. dos S.; ANDRADE, L. Teixeira~de. Sapuca{\'\i} street: entertainment
+  hub and commercial gentrification in belo horizonte.
+\textbf{International Journal of the Sociology of Leisure}, Springer, v.~2, p.
+  43--61, 2019.}
+
+\end{thebibliography}
