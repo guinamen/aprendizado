@@ -2,13 +2,12 @@
 Como o objetivo do trabalho é caracterizar o espaço urbano, demos preferência aos algroritmos de representação compacta. 
 
 ## Algoritmo FHMFreq
-### Base 2
 Para analizar esta base o algoritmo FHMFreq foi utilizado para obter as representaçõe com utilidade mínima e alta frequência. Para tanto configura-se a utilidade mínima como 1 Km², ou seja o itemset deve ter no mínimo este valor total de metros quadrados e no mínimo 30% de suporte.
 
 ### Sumário
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/utilidade_suporte.png)
 
-### Barreiro
+### Dadps
 Regional|Itemset| Utilidade (m²)| Suporte
 --|--|--|--
 Barreiro|BARRACÃO P2, CASA P1, CASA P3|2.056.244|431
