@@ -11,95 +11,95 @@ Webb et al., argumentam que esse conjunto de itens poderia ser mais interessante
 
 ### Barreiro
 
-Regional|Itemset | Suporte| Lift 
---|--|--|--|
-Barreiro|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |2|14.345.001
-Barreiro|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2, LOJA P5 OUTLIER |2|14.345.001
-Barreiro|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |2|4.781.667
-Barreiro|LOJA P5, LOJA P5 OUTLIER |2|4.781.667
-Barreiro|SALA P4, SALA P5 |2|4.781.667
-Barreiro|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2, LOJA P5 |2|4.781.667
-Barreiro|SALA P4, SALA P4 OUTLIER |4|1.593.889
-Barreiro|SALA P3, VAGA DE GARAGEM NÃO RESIDENCIAL P2 |3|15.369.643
-Barreiro|SALA P3, VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER |6|122.957.146
-Barreiro|BARRACÃO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER, SALA P3 |4|10.246.429
-Centro-Sul|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER |4|8.920.833
-Centro-Sul|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER |4|53.525
-Centro-Sul|GALPÃO P2 OUTLIER, GALPÃO P3 OUTLIER |15|23.021.503
-Centro-Sul|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P2 OUTLIER |6|22.536.842
-Centro-Sul|GALPÃO P3 OUTLIER, GALPÃO P4 OUTLIER |5|19.184.587
-Centro-Sul|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER |55|16.688.633
-Centro-Sul|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, LOJA_P1 OUTLIER |6|16.554.125
-Centro-Sul|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |82|15.675.177
-Centro-Sul|VAGA DE GARAGEM RESIDENCIAL P2, VAGA DE GARAGEM RESIDENCIAL P2 OUTLIER |7|15.418.725
-Centro-Sul|VAGA DE GARAGEM NÃO RESIDENCIAL P2 OUTLIER, VAGA DE GARAGEM RESIDENCIAL P2 OUTLIER |7|14.607.212
-Leste|SALA P5, SALA P5 OUTLIER |2|86.650.006
-Leste|SALA P5 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |2|86.650.006
-Leste|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |2|86.650.006
-Leste|LOJA P5 OUTLIER, SALA P5 OUTLIER |2|86.650.006
-Leste|LOJA P5 OUTLIER, SALA P5 |2|86.650.006
-Leste|LOJA P5 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |2|86.650.006
-Leste|VAGA DE GARAGEM NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |6|11.815.909
-Leste|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |8|8.402.424
-Leste|GALPÃO P4 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P2 OUTLIER |3|8.123.438
-Leste|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |5|72.208.336
-Nordeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER |2|15.194.999
-Nordeste|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |6|18.993.748
-Nordeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER |6|18.993.748
-Nordeste|LOJA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |4|18.418.181
-Nordeste|SALA P4, SALA P4 OUTLIER |12|16.280.357
-Nordeste|SALA P4 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |4|14.471.428
-Nordeste|LOJA P5 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |3|14.245.312
-Nordeste|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |6|14.245.312
-Nordeste|APARTAMENTO P5, VAGA DE GARAGEM RESIDENCIAL P5 |6|11.688.462
-Nordeste|SALA P4 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |4|10.853.571
-Noroeste|APARTAMENTO P5, APARTAMENTO P5 OUTLIER |2|42.266.666
-Noroeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER |4|21.133.333
-Noroeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2, SALA P4 |4|9.945.098
-Noroeste|VAGA DE GARAGEM RESIDENCIAL P4, VAGA DE GARAGEM RESIDENCIAL P4 OUTLIER |4|74.588.234
-Noroeste|APARTAMENTO P5 OUTLIER, VAGA DE GARAGEM RESIDENCIAL P4 |4|4.972.549
-Noroeste|LOJA P5, SALA P4 |5|49.725.487
-Noroeste|APARTAMENTO P4 OUTLIER, APARTAMENTO P5 OUTLIER |6|45.285.713
-Noroeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2, SALA P3 |4|4.449.123
-Noroeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2, SALA P3 OUTLIER |4|41.235.775
-Noroeste|SALA P3, VAGA DE GARAGEM NÃO RESIDENCIAL P3 |6|4.004.211
-Norte|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P2 |2|4.171.667
-Norte|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |2|4.171.667
-Norte|SALA P3, SALA P3 OUTLIER |8|12.835.896
-Norte|LOJA P5, SALA P3 |4|10.429.167
-Norte|LOJA P5, SALA P3 OUTLIER |4|96.269.226
-Norte|CASA COM OCUPAÇÃO NÃO RESIDENCIAL P4, SALA P4 |4|7.946.031
-Norte|APARTAMENTO P4, APARTAMENTO P4 OUTLIER |20|6.016.827
-Norte|GALPÃO P3 OUTLIER, GALPÃO P4 OUTLIER |7|44.810.745
-Norte|LOJA P5, SALA P2 |4|3.910.938
-Norte|CASA COM OCUPAÇÃO NÃO RESIDENCIAL P2 OUTLIER, VAGA DE GARAGEM RESIDENCIAL P3 |4|3.575.714
-Oeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER |4|46.650.003
-Oeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER |2|46.650.003
-Oeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |4|11.662.501
-Oeste|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER |11|8.145.238
-Oeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |4|7.775.001
-Oeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P2 OUTLIER, SALA P5 OUTLIER |3|7.775
-Oeste|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |3|7.775
-Oeste|VAGA DE GARAGEM NÃO RESIDENCIAL P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER |13|72.196.434
-Oeste|SALA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5|11|71.270.836
-Oeste|SALA P5 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P5 |19|6.155.209
-Pampulha|SALA P5, SALA P5 OUTLIER |2|74.599.994
-Pampulha|SALA P5, VAGA DE GARAGEM RESIDENCIAL P2 |2|74.599.994
-Pampulha|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER |4|74.599.994
-Pampulha|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER |2|49.733.334
-Pampulha|VAGA DE GARAGEM NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER |6|12.788.573
-Pampulha|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, LOJA P5 |4|124.333.336
-Pampulha|APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER, LOJA P5 |4|124.333.336
-Pampulha|SALA P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |12|9.473.016
-Pampulha|SALA P5 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER |3|7.992.857
-Pampulha|SALA P4 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |12|6.912.742
-Venda Nova|APARTAMENTO P4, APARTAMENTO P4 OUTLIER |4|20.657.143
-Venda Nova|VAGA DE GARAGEM NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER |3|13.145.454
-Venda Nova|SALA P3, VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER |7|9.201.819
-Venda Nova|LOJA P5, VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER |4|8.763.636
-Venda Nova|LOJA P4 OUTLIER, LOJA P5 OUTLIER |3|8.342.307
-Venda Nova|SALA P3 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER |9|8.159.247
-Venda Nova|SALA P2 OUTLIER, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |5|7.774.193
-Venda Nova|SALA P3, SALA P3 OUTLIER |15|747.931
-Venda Nova|SALA P2, VAGA DE GARAGEM NÃO RESIDENCIAL P2 |4|53.555.553
-Venda Nova|SALA P2, VAGA DE GARAGEM NÃO RESIDENCIAL P4 |6|53.555.553
+|REGIONAL   |ITEMSET                                                                                          | SUPORTE|       LIFT|       P|
+|:----------|:------------------------------------------------------------------------------------------------|-------:|----------:|-------:|
+|Norte      |SALA P3, SALA P3 OUTLIER                                                                         |       4| 134.571410| 0.0e+00|
+|Norte      |APARTAMENTO P4, APARTAMENTO P4 OUTLIER                                                           |      10|  67.932690| 0.0e+00|
+|Norte      |GALPÃO P2 OUTLIER, GALPÃO P3 OUTLIER                                                             |       5|  26.761360| 4.0e-07|
+|Norte      |SALA P3 OUTLIER, LOJA P3 OUTLIER                                                                 |       5|  15.770089| 3.2e-06|
+|Norte      |LOJA P4, LOJA P4 OUTLIER                                                                         |       7|  14.545588| 1.0e-07|
+|Norte      |SALA P2, LOJA P4                                                                                 |       6|  13.246877| 2.3e-06|
+|Norte      |SALA P2 OUTLIER, APARTAMENTO P2 OUTLIER                                                          |       6|  11.974575| 3.1e-06|
+|Norte      |SALA P2, APARTAMENTO P2 OUTLIER                                                                  |       7|  10.477755| 1.3e-06|
+|Norte      |LOJA P3 OUTLIER, LOJA P4 OUTLIER                                                                 |       8|  10.389706| 2.0e-07|
+|Norte      |APARTAMENTO P3 OUTLIER, APARTAMENTO P4 OUTLIER                                                   |      11|  10.047188| 0.0e+00|
+|Barreiro   |VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER, SALA P3                                              |       3| 131.057140| 6.0e-07|
+|Barreiro   |SALA P2, SALA P4 OUTLIER                                                                         |       4|  78.410255| 0.0e+00|
+|Barreiro   |SALA P3, SALA P3 OUTLIER                                                                         |       6|  65.528570| 0.0e+00|
+|Barreiro   |SALA P2, SALA P2 OUTLIER                                                                         |       6|  58.807693| 0.0e+00|
+|Barreiro   |SALA P3 OUTLIER, SALA P2 OUTLIER                                                                 |       6|  38.225000| 0.0e+00|
+|Barreiro   |SALA P4 OUTLIER, LOJA P4 OUTLIER                                                                 |       4|  36.404762| 1.3e-06|
+|Barreiro   |SALA P2, SALA P3 OUTLIER                                                                         |       6|  35.284615| 0.0e+00|
+|Barreiro   |GALPÃO P3 OUTLIER, GALPÃO P4 OUTLIER                                                             |       4|  31.854168| 3.8e-06|
+|Barreiro   |VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER, APARTAMENTO P1 OUTLIER                               |       4|  29.834145| 2.2e-06|
+|Barreiro   |SALA P2 OUTLIER, LOJA P4 OUTLIER                                                                 |       6|  27.303572| 0.0e+00|
+|Leste      |VAGA DE GARAGEM NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER                   |       3| 104.249990| 9.0e-07|
+|Leste      |VAGA DE GARAGEM NÃO RESIDENCIAL P4, SALA P4                                                      |       5|  77.222210| 0.0e+00|
+|Leste      |VAGA DE GARAGEM NÃO RESIDENCIAL P3, SALA P3                                                      |       4|  38.156864| 9.0e-07|
+|Leste      |VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER, SALA P3 OUTLIER                                      |       6|  32.433334| 0.0e+00|
+|Leste      |VAGA DE GARAGEM RESIDENCIAL P4, APARTAMENTO P4 OUTLIER                                           |       9|  17.103514| 0.0e+00|
+|Leste      |SALA P2, SALA P2 OUTLIER                                                                         |       7|  10.811110| 1.0e-06|
+|Leste      |VAGA DE GARAGEM RESIDENCIAL P4, APARTAMENTO P4                                                   |      16|   8.687500| 0.0e+00|
+|Leste      |APARTAMENTO P4, APARTAMENTO P4 OUTLIER                                                           |      29|   7.873046| 0.0e+00|
+|Leste      |SALA P2 OUTLIER, LOJA P4                                                                         |      11|   5.887239| 2.0e-07|
+|Leste      |SALA P3 OUTLIER, LOJA P4                                                                         |      11|   5.298515| 7.0e-07|
+|Venda Nova |VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER, SALA P3                                              |       4|  79.792210| 0.0e+00|
+|Venda Nova |VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER, SALA P3 OUTLIER                                      |       6|  77.445380| 0.0e+00|
+|Venda Nova |SALA P3, SALA P3 OUTLIER                                                                         |       8|  65.711235| 0.0e+00|
+|Venda Nova |SALA P3, GALPÃO P1 OUTLIER                                                                       |       4|  31.030304| 4.2e-06|
+|Venda Nova |GALPÃO P2 OUTLIER, GALPÃO P4 OUTLIER                                                             |       5|  26.482760| 4.0e-07|
+|Venda Nova |GALPÃO P2 OUTLIER, GALPÃO P3 OUTLIER                                                             |       6|  21.186205| 1.0e-07|
+|Venda Nova |SALA P2, SALA P2 OUTLIER                                                                         |       6|  19.361345| 2.0e-07|
+|Venda Nova |SALA P3 OUTLIER, LOJA P4                                                                         |      13|  18.644258| 0.0e+00|
+|Venda Nova |VAGA DE GARAGEM RESIDENCIAL P3, APARTAMENTO P1 OUTLIER                                           |       7|  17.066666| 0.0e+00|
+|Venda Nova |GALPÃO P4, GALPÃO P4 OUTLIER                                                                     |       6|  16.457144| 3.0e-07|
+|Noroeste   |SALA P3, SALA P3 OUTLIER                                                                         |       8|  24.311690| 0.0e+00|
+|Noroeste   |VAGA DE GARAGEM RESIDENCIAL P4, APARTAMENTO P4                                                   |      17|  14.778947| 0.0e+00|
+|Noroeste   |APARTAMENTO P4, APARTAMENTO P4 OUTLIER                                                           |      25|  13.195488| 0.0e+00|
+|Noroeste   |SALA P3 OUTLIER, LOJA P4 OUTLIER                                                                 |       7|  11.755980| 8.0e-07|
+|Noroeste   |CASA P5, CASA P4 OUTLIER                                                                         |       8|   8.445113| 1.9e-06|
+|Noroeste   |CASA COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO P4                                             |       9|   7.824149| 3.0e-07|
+|Noroeste   |SALA P3 OUTLIER, LOJA P1 OUTLIER                                                                 |      12|   7.508022| 0.0e+00|
+|Noroeste   |GALPÃO P1 OUTLIER, LOJA P4 OUTLIER                                                               |      11|   7.007260| 1.0e-07|
+|Noroeste   |SALA P3 OUTLIER, LOJA P4                                                                         |      14|   6.820264| 0.0e+00|
+|Noroeste   |SALA P3, LOJA P4                                                                                 |      13|   6.634678| 0.0e+00|
+|Nordeste   |APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER |       3| 209.875000| 1.0e-07|
+|Nordeste   |VAGA DE GARAGEM NÃO RESIDENCIAL P4, SALA P4                                                      |       3| 209.875000| 1.0e-07|
+|Nordeste   |SALA P4, SALA P4 OUTLIER                                                                         |       6| 179.892850| 0.0e+00|
+|Nordeste   |VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER, SALA P4                                              |       3| 157.406250| 3.0e-07|
+|Nordeste   |VAGA DE GARAGEM RESIDENCIAL P5, APARTAMENTO P5                                                   |       3| 129.153840| 4.0e-07|
+|Nordeste   |VAGA DE GARAGEM NÃO RESIDENCIAL P3, SALA P3                                                      |       8|  70.694740| 0.0e+00|
+|Nordeste   |APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER, SALA P3                                     |       4|  58.912277| 2.0e-07|
+|Nordeste   |VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER, SALA P3 OUTLIER                                      |       6|  57.238640| 0.0e+00|
+|Nordeste   |APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P3 OUTLIER, SALA P3 OUTLIER                             |       4|  50.878788| 3.0e-07|
+|Nordeste   |SALA P3, SALA P3 OUTLIER                                                                         |      12|  48.200962| 0.0e+00|
+|Pampulha   |APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER |       2| 811.000060| 8.0e-07|
+|Pampulha   |VAGA DE GARAGEM NÃO RESIDENCIAL P4, VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER                   |       3| 139.028560| 5.0e-07|
+|Pampulha   |VAGA DE GARAGEM NÃO RESIDENCIAL P4, SALA P4                                                      |       6|  99.306114| 0.0e+00|
+|Pampulha   |VAGA DE GARAGEM NÃO RESIDENCIAL P4, SALA P4 OUTLIER                                              |       6|  73.172935| 0.0e+00|
+|Pampulha   |VAGA DE GARAGEM NÃO RESIDENCIAL P4 OUTLIER, SALA P4 OUTLIER                                      |       4|  68.294730| 1.0e-07|
+|Pampulha   |APARTAMENTO P5, APARTAMENTO P5 OUTLIER                                                           |       4|  67.583330| 1.0e-07|
+|Pampulha   |SALA P4, SALA P4 OUTLIER                                                                         |      10|  60.977448| 0.0e+00|
+|Pampulha   |GALPÃO P3 OUTLIER, GALPÃO P4 OUTLIER                                                             |      10|  27.538202| 0.0e+00|
+|Pampulha   |VAGA DE GARAGEM NÃO RESIDENCIAL P4, SALA P3                                                      |       5|  25.746030| 3.0e-07|
+|Pampulha   |VAGA DE GARAGEM NÃO RESIDENCIAL P3, SALA P3 OUTLIER                                              |      14|  24.899124| 0.0e+00|
+|Oeste      |APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4, APARTAMENTO COM OCUPAÇÃO NÃO RESIDENCIAL P4 OUTLIER |       2| 542.333300| 2.3e-06|
+|Oeste      |VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER, SALA P5                                              |       5|  82.171715| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM NÃO RESIDENCIAL P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER                   |       7|  79.643360| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM NÃO RESIDENCIAL P5, SALA P5                                                      |       5|  69.529915| 0.0e+00|
+|Oeste      |SALA P5, SALA P5 OUTLIER                                                                         |       7|  63.272220| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM NÃO RESIDENCIAL P5, SALA P5 OUTLIER                                              |      10|  62.576927| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM RESIDENCIAL P5, APARTAMENTO P5 OUTLIER                                           |       7|  57.520203| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER, SALA P5 OUTLIER                                      |       7|  51.768180| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM NÃO RESIDENCIAL P4, SALA P4                                                      |      22|  41.717950| 0.0e+00|
+|Oeste      |VAGA DE GARAGEM RESIDENCIAL P5, APARTAMENTO P5                                                   |       8|  40.172840| 0.0e+00|
+|Centro-Sul |GALPÃO P2 OUTLIER, GALPÃO P3 OUTLIER                                                             |       7|  22.367058| 0.0e+00|
+|Centro-Sul |VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER, SALA P5                                              |      28|  16.460608| 0.0e+00|
+|Centro-Sul |VAGA DE GARAGEM NÃO RESIDENCIAL P5, SALA P5                                                      |      47|  16.117678| 0.0e+00|
+|Centro-Sul |VAGA DE GARAGEM NÃO RESIDENCIAL P5, VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER                   |      20|  12.933333| 0.0e+00|
+|Centro-Sul |BARRACÃO P1, BARRACÃO P1 OUTLIER                                                                 |       9|  11.530190| 0.0e+00|
+|Centro-Sul |VAGA DE GARAGEM NÃO RESIDENCIAL P5 OUTLIER, SALA P5 OUTLIER                                      |      25|  11.411765| 0.0e+00|
+|Centro-Sul |SALA P5, SALA P5 OUTLIER                                                                         |      39|   9.440642| 0.0e+00|
+|Centro-Sul |CASA COM OCUPAÇÃO NÃO RESIDENCIAL P4, CASA COM OCUPAÇÃO NÃO RESIDENCIAL P5                       |       9|   9.100521| 1.0e-07|
+|Centro-Sul |VAGA DE GARAGEM NÃO RESIDENCIAL P5, SALA P5 OUTLIER                                              |      34|   9.053333| 0.0e+00|
+|Centro-Sul |VAGA DE GARAGEM RESIDENCIAL P5 OUTLIER, APARTAMENTO P5 OUTLIER                                   |      11|   8.766432| 0.0e+00|
