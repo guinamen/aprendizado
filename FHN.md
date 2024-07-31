@@ -4,7 +4,7 @@ Como o objetivo do trabalho é caracterizar o espaço urbano, demos preferência
 ## Algoritmo FHN
 ### Base 3
 Para analizar esta base o algoritmo FHN foi utilizado para obter as representaçõe com utilidade mínima com itens em que o valor pode ser negativo. Para tanto configura-se a utilidade mínima como 1 Km², ou seja o itemset deve ter no mínimo este valor total de metros quadrados.
-O objetivo deste processo é realizar uma análise comparativo entreas as Bases 2 e 3. Para verificar como que os lotes vagos estão configurados.
+O objetivo deste processo é realizar uma análise comparativo entreas as Bases 2 e 3. Para verificar como que os lotes vagos estão configurados. A tabaela abaixo mostra o número total de intemset encontrados em cada base.
 
 |REGIONAL   | UTILIDADE NEGATIVA| UTILIDADE POSITIVA|
 |:----------|------------------:|------------------:|
