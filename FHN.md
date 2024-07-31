@@ -6,17 +6,16 @@ Como o objetivo do trabalho é caracterizar o espaço urbano, demos preferência
 Para analizar esta base o algoritmo FHN foi utilizado para obter as representaçõe com utilidade mínima com itens em que o valor pode ser negativo. Para tanto configura-se a utilidade mínima como 1 Km², ou seja o itemset deve ter no mínimo este valor total de metros quadrados.
 O objetivo deste processo é realizar uma análise comparativo entreas as Bases 2 e 3. Para verificar como que os lotes vagos estão configurados.
 
-Regional| Base 1 - Total de Itemset| Base 2 - Total de Itemset | Utilidade Mínima
---|--|--|--
-Barreiro| 1.627 | 1.625 | 1Km²
-Centro-Sul| 19.170 | 21.934 | 1Km²
-Leste| 2.723| 3.344 | 1Km²
-Nordeste| 978 | 976 | 1Km²
-Noroeste|4.150 | 5.012 | 1Km²
-Norte|184|12 | 1Km²
-Oeste|633|743 | 1Km²
-Pampulha|400|63 | 1Km²
-Venda Nova| 815 |941| 1Km²
-
+|REGIONAL   | UTILIDADE NEGATIVA| UTILIDADE POSITIVA|
+|:----------|------------------:|------------------:|
+|Barreiro   |              1.627|              1.629|
+|Centro-Sul |             21.940|             19.174|
+|Leste      |              3.346|              2.724|
+|Nordeste   |                977|                979|
+|Noroeste   |              5.013|              4.151|
+|Norte      |                 12|                184|
+|Oeste      |                744|                634|
+|Pampulha   |                 63|                400|
+|Venda Nova |                942|                816|
 
 
