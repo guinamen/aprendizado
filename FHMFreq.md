@@ -7,7 +7,7 @@ Para analizar esta base o algoritmo FHMFreq foi utilizado para obter as represen
 ### Sumário
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/utilidade_suporte.png)
 
-### Dadps
+### Dados
 Regional|Itemset| Utilidade (m²)| Suporte
 --|--|--|--
 Barreiro|BARRACÃO P2, CASA P1, CASA P3|2.056.244|431
