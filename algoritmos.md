@@ -8,9 +8,9 @@ Para analizar esta base o algoritmo FPMax foi utilizado para obter as representa
 
 Regional | Itemset| Suporte
 --|--|--
-Barreiro|CASA P3 LOTE VAGO|624
-Barreiro|CASA P2 LOTE VAGO|628
-Barreiro|CASA P2 CASA P3 CASA P1|810
+Barreiro|CASA P3, LOTE VAGO|624
+Barreiro|CASA P2, LOTE VAGO|628
+Barreiro|CASA P2, CASA P3 CASA P1|810
 Centro-Sul|LOTE VAGO|616
 Centro-Sul|LOJA P3 |668
 Centro-Sul|APARTAMENTO P3 |672
@@ -37,4 +37,3 @@ Pampulha|CASA P3, CASA P4|762
 Pampulha|CASA P3, LOTE VAGO, CASA P2|658
 Venda Nova|CASA P2, CASA P3, LOTE VAGO|635
 Venda Nova|CASA P2, CASA P3, CASA P1|896
-
