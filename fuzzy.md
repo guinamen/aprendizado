@@ -119,21 +119,27 @@
 
 # Agrupamento por Similaridade:
 
-## Grupo 1: Predomínio de Casas e Barracões com Alta Intensidade em P2 e P3
+## Grupo 1:
+Predomínio de Casas e Barracões com Alta Intensidade em P2 e P3
+
 Norte
 Barreiro
 Venda Nova
 
-## Grupo 2: Variedade de Imóveis com Alta Intensidade em Apartamentos P3 e Casas P2/P3
+## Grupo 2:
+Variedade de Imóveis com Alta Intensidade em Apartamentos P3 e Casas P2/P3
+
 Leste
 Noroeste
 Nordeste
 
-Grupo 3: Variedade de Imóveis com Alta Intensidade em Apartamentos P3
+## Grupo 3:
+Variedade de Imóveis com Alta Intensidade em Apartamentos P3
+
 Pampulha
 Oeste
 Centro-Sul
 
-Conclusão:
+#Conclusão:
 
 Os agrupamentos indicam que algumas regionais têm características semelhantes em termos de tipos de imóveis e intensidade. O Grupo 1 é caracterizado por uma predominância de casas e barracões com alta intensidade em padrões P2 e P3. O Grupo 2 apresenta uma variedade de imóveis, mas também com alta intensidade em apartamentos P3 e casas P2/P3. O Grupo 3 é definido pela alta intensidade em apartamentos P3, refletindo uma possível área de desenvolvimento residencial de padrão mais elevado.
