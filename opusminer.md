@@ -103,3 +103,30 @@ Webb et al., argumentam que esse conjunto de itens poderia ser mais interessante
 |Centro-Sul |CASA COM OCUPAÇÃO NÃO RESIDENCIAL P4, CASA COM OCUPAÇÃO NÃO RESIDENCIAL P5                       |       9|   9.100521| 1.0e-07|
 |Centro-Sul |VAGA DE GARAGEM NÃO RESIDENCIAL P5, SALA P5 OUTLIER                                              |      34|   9.053333| 0.0e+00|
 |Centro-Sul |VAGA DE GARAGEM RESIDENCIAL P5 OUTLIER, APARTAMENTO P5 OUTLIER                                   |      11|   8.766432| 0.0e+00|
+
+Padrões de Associação Mais Relevantes
+
+    Sala e Vaga de Garagem:
+        Norte: SALA P3 OUTLIER e VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER são combinados com um suporte significativo e lift elevado.
+        Venda Nova: VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER e SALA P3 também aparecem juntos com um suporte razoável e lift elevado.
+
+    Sala e Outras Salas:
+        Barreiro: SALA P3 combinada com SALA P3 OUTLIER e SALA P2 com SALA P2 OUTLIER têm alta frequência e lift considerável, indicando uma forte relação entre diferentes tipos de salas.
+
+    Apartamento e Outras Salas/Vagas:
+        Leste: APARTAMENTO P4 frequentemente aparece junto com APARTAMENTO P4 OUTLIER, com lift relativamente alto.
+        Pampulha: APARTAMENTO P5 combinado com APARTAMENTO P5 OUTLIER e VAGA DE GARAGEM NÃO RESIDENCIAL P4 com SALA P4 mostram uma associação significativa.
+
+    Galpão e Outras Salas:
+        Centro-Sul: GALPÃO P2 OUTLIER e GALPÃO P3 OUTLIER aparecem frequentemente juntos, indicando uma relação forte entre diferentes tipos de galpões.
+
+    Vaga de Garagem e Tipos Residenciais:
+        Oeste: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER e VAGA DE GARAGEM RESIDENCIAL P5 com APARTAMENTO P5 mostram associações significativas.
+        Centro-Sul: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER apresentou alto suporte.
+
+Observações Adicionais
+
+    Outliers: Itens com OUTLIER têm uma presença notável em muitas combinações, indicando que padrões extremos são comuns e podem estar relacionados com certos tipos de imóveis.
+    Lift: Alguns padrões de associação têm lifts muito altos, sugerindo uma forte relação entre os itens em contextos específicos.
+
+Esses padrões podem indicar preferências ou tendências em diferentes regiões de Belo Horizonte, como a prevalência de certas combinações de tipos de imóveis e características associadas. Se precisar de mais detalhes sobre alguma associação específica ou de outra análise, estou à disposição!
