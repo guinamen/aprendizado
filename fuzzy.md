@@ -146,6 +146,6 @@ Oeste
 
 Centro-Sul
 
-#Conclusão:
+# Conclusão:
 
 Os agrupamentos indicam que algumas regionais têm características semelhantes em termos de tipos de imóveis e intensidade. O Grupo 1 é caracterizado por uma predominância de casas e barracões com alta intensidade em padrões P2 e P3. O Grupo 2 apresenta uma variedade de imóveis, mas também com alta intensidade em apartamentos P3 e casas P2/P3. O Grupo 3 é definido pela alta intensidade em apartamentos P3, refletindo uma possível área de desenvolvimento residencial de padrão mais elevado.
