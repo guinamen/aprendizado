@@ -24,10 +24,10 @@ Região Pampulha
 A **Pampulha** destaca-se pelos apartamentos de padrão P3 e intensidade alta, presentes em 574 CEPs. Casas de padrão P3 e intensidade alta são comuns, encontradas em 991 CEPs. A região possui uma quantidade considerável de lotes vagos de intensidade alta, abrangendo 543 CEPs, e uma mistura de casas com padrões P4 e P3, ambas com intensidade alta.
 Região Oeste
 
-A região Oeste tem uma alta presença de apartamentos de padrão P3 e intensidade alta, abrangendo 581 CEPs. Casas de padrão P3 e intensidade alta são frequentes, presentes em 710 CEPs. A região possui uma quantidade significativa de lotes vagos de intensidade baixa, encontrados em 400 CEPs, e uma mistura de casas com padrões P2 e P3, ambas com intensidade alta.
+A região **Oeste** tem uma alta presença de apartamentos de padrão P3 e intensidade alta, abrangendo 581 CEPs. Casas de padrão P3 e intensidade alta são frequentes, presentes em 710 CEPs. A região possui uma quantidade significativa de lotes vagos de intensidade baixa, encontrados em 400 CEPs, e uma mistura de casas com padrões P2 e P3, ambas com intensidade alta.
 Região Centro-Sul
 
-A região Centro-Sul é caracterizada por uma predominância de imóveis de padrão de acabamento alto, incluindo lotes vagos, apartamentos, casas e lojas.
+A região **Centro-Sul** é caracterizada por uma predominância de imóveis de padrão de acabamento alto, incluindo lotes vagos, apartamentos, casas e lojas.
 
 Lotes vagos de intensidade baixa são encontrados em 292 CEPs, sugerindo áreas ainda em potencial de desenvolvimento.
 
