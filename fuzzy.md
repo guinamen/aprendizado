@@ -123,21 +123,27 @@
 Predomínio de Casas e Barracões com Alta Intensidade em P2 e P3
 
 Norte
+
 Barreiro
+
 Venda Nova
 
 ## Grupo 2:
 Variedade de Imóveis com Alta Intensidade em Apartamentos P3 e Casas P2/P3
 
 Leste
+
 Noroeste
+
 Nordeste
 
 ## Grupo 3:
 Variedade de Imóveis com Alta Intensidade em Apartamentos P3
 
 Pampulha
+
 Oeste
+
 Centro-Sul
 
 #Conclusão:
