@@ -27,17 +27,8 @@ Região Oeste
 A região **Oeste** tem uma alta presença de apartamentos de padrão P3 e intensidade alta, abrangendo 581 CEPs. Casas de padrão P3 e intensidade alta são frequentes, presentes em 710 CEPs. A região possui uma quantidade significativa de lotes vagos de intensidade baixa, encontrados em 400 CEPs, e uma mistura de casas com padrões P2 e P3, ambas com intensidade alta.
 Região Centro-Sul
 
-A região **Centro-Sul** é caracterizada por uma predominância de imóveis de padrão de acabamento alto, incluindo lotes vagos, apartamentos, casas e lojas.
+A região **Centro-Sul** é caracterizada por uma predominância de imóveis de padrão de acabamento alto, incluindo lotes vagos, apartamentos, casas e lojas. Lotes vagos de intensidade baixa são encontrados em 292 CEPs, sugerindo áreas ainda em potencial de desenvolvimento. Apartamentos na região apresentam diferentes padrões de acabamento. Apartamentos com padrão P2 e intensidade alta estão presentes em 310 CEPs. Aqueles com padrão P3 e intensidade alta têm uma presença significativa, abrangendo 648 CEPs. Apartamentos com padrão P4 e intensidade alta são encontrados em 495 CEPs. Há também combinações de apartamentos de padrões P4 e P3, ambos de intensidade alta, em 414 CEPs. Casas com padrão de acabamento P3 e intensidade alta estão presentes em 373 CEPs, indicando uma quantidade considerável de residências de alto padrão na região. Lojas na região também são predominantemente de padrão de acabamento alto. Lojas com padrão P3 e intensidade alta aparecem em 439 CEPs. Além disso, há combinações de lojas com apartamentos de padrão P3 e intensidade alta, abrangendo 300 CEPs. Em resumo, a região Centro-Sul é caracterizada por uma ampla variedade de imóveis de alto padrão, com uma forte presença de apartamentos e lojas de acabamento elevado. A presença de lotes vagos de intensidade baixa também sugere áreas com potencial para desenvolvimento futuro, destacando a atratividade e a valorização imobiliária da região.
 
-Lotes vagos de intensidade baixa são encontrados em 292 CEPs, sugerindo áreas ainda em potencial de desenvolvimento.
-
-Apartamentos na região apresentam diferentes padrões de acabamento. Apartamentos com padrão P2 e intensidade alta estão presentes em 310 CEPs. Aqueles com padrão P3 e intensidade alta têm uma presença significativa, abrangendo 648 CEPs. Apartamentos com padrão P4 e intensidade alta são encontrados em 495 CEPs. Há também combinações de apartamentos de padrões P4 e P3, ambos de intensidade alta, em 414 CEPs.
-
-Casas com padrão de acabamento P3 e intensidade alta estão presentes em 373 CEPs, indicando uma quantidade considerável de residências de alto padrão na região.
-
-Lojas na região também são predominantemente de padrão de acabamento alto. Lojas com padrão P3 e intensidade alta aparecem em 439 CEPs. Além disso, há combinações de lojas com apartamentos de padrão P3 e intensidade alta, abrangendo 300 CEPs.
-
-Em resumo, a região Centro-Sul é caracterizada por uma ampla variedade de imóveis de alto padrão, com uma forte presença de apartamentos e lojas de acabamento elevado. A presença de lotes vagos de intensidade baixa também sugere áreas com potencial para desenvolvimento futuro, destacando a atratividade e a valorização imobiliária da região.
 # Conclusão
 
 Belo Horizonte apresenta uma grande diversidade imobiliária, com cada regional exibindo características distintas. As casas de padrões P2 e P3 com intensidade alta são predominantes em várias regiões, enquanto lotes vagos de intensidade baixa indicam áreas com potencial de desenvolvimento. A diversidade de apartamentos, lojas e barracões com diferentes padrões de acabamento e intensidades reflete a complexidade e a dinâmica do mercado imobiliário da cidade.
