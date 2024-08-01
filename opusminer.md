@@ -125,5 +125,7 @@ Centro-Sul: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER apresentou a
 
 # Observações Adicionais
 Outliers: Itens com OUTLIER (área construída muito acima da média) têm uma presença notável em muitas combinações, indicando que padrões extremos são comuns e podem estar relacionados com certos tipos de imóveis.
+
 Lift: Alguns padrões de associação têm lifts muito altos, sugerindo uma forte relação entre os itens em contextos específicos.
+
 Esses padrões podem indicar preferências ou tendências em diferentes regiões de Belo Horizonte, como a prevalência de certas combinações de tipos de imóveis e características associadas.
