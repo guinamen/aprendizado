@@ -106,18 +106,22 @@ Webb et al., argumentam que esse conjunto de itens poderia ser mais interessante
 
 # Padrões de Associação Mais Relevantes
 ## Sala e Vaga de Garagem:
-    Norte: SALA P3 OUTLIER e VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER são combinados com um suporte significativo e lift elevado.
-        Venda Nova: VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER e SALA P3 também aparecem juntos com um suporte razoável e lift elevado.
+Norte: SALA P3 OUTLIER e VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER são combinados com um suporte significativo e lift elevado.
+Venda Nova: VAGA DE GARAGEM NÃO RESIDENCIAL P3 OUTLIER e SALA P3 também aparecem juntos com um suporte razoável e lift elevado.
+
 ## Sala e Outras Salas:
-        Barreiro: SALA P3 combinada com SALA P3 OUTLIER e SALA P2 com SALA P2 OUTLIER têm alta frequência e lift considerável, indicando uma forte relação entre diferentes tipos de salas.
+Barreiro: SALA P3 combinada com SALA P3 OUTLIER e SALA P2 com SALA P2 OUTLIER têm alta frequência e lift considerável, indicando uma forte relação entre diferentes tipos de salas.
+
 ## Apartamento e Outras Salas/Vagas:
-        Leste: APARTAMENTO P4 frequentemente aparece junto com APARTAMENTO P4 OUTLIER, com lift relativamente alto.
-        Pampulha: APARTAMENTO P5 combinado com APARTAMENTO P5 OUTLIER e VAGA DE GARAGEM NÃO RESIDENCIAL P4 com SALA P4 mostram uma associação significativa.
+Leste: APARTAMENTO P4 frequentemente aparece junto com APARTAMENTO P4 OUTLIER, com lift relativamente alto.
+Pampulha: APARTAMENTO P5 combinado com APARTAMENTO P5 OUTLIER e VAGA DE GARAGEM NÃO RESIDENCIAL P4 com SALA P4 mostram uma associação significativa.
+
 ## Galpão e Outras Salas:
-        Centro-Sul: GALPÃO P2 OUTLIER e GALPÃO P3 OUTLIER aparecem frequentemente juntos, indicando uma relação forte entre diferentes tipos de galpões.
+Centro-Sul: GALPÃO P2 OUTLIER e GALPÃO P3 OUTLIER aparecem frequentemente juntos, indicando uma relação forte entre diferentes tipos de galpões.
+
 ## Vaga de Garagem e Tipos Residenciais:
-        Oeste: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER e VAGA DE GARAGEM RESIDENCIAL P5 com APARTAMENTO P5 mostram associações significativas.
-        Centro-Sul: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER apresentou alto suporte.
+Oeste: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER e VAGA DE GARAGEM RESIDENCIAL P5 com APARTAMENTO P5 mostram associações significativas.
+Centro-Sul: VAGA DE GARAGEM NÃO RESIDENCIAL P5 com SALA P5 OUTLIER apresentou alto suporte.
 
 # Observações Adicionais
 ## Outliers: Itens com OUTLIER (área construída muito acima da média) têm uma presença notável em muitas combinações, indicando que padrões extremos são comuns e podem estar relacionados com certos tipos de imóveis.
