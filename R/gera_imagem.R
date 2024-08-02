@@ -69,7 +69,7 @@ gera_imagens <- function(tabela, utilidade) {
   
   u <- utilidade %>% 
     ggplot(aes(x=UTILIDADE/1000000, y=SUPORTE, group=REGIONAL, shape=REGIONAL,color=REGIONAL)) +
-    geom_point() +
+    geom_point(size = 3) +
     scale_shape_manual(values = seq(0,8)) +
     labs(x = "Utilidade Km²",
          y="Suporte",

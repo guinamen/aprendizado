@@ -10,9 +10,9 @@ gera_preambulo <- function(arquivo, tipos) {
   close(fileConn)
   
   codigos <- tipos %>%
-    unite("NOME", TIPO_CONSTRUTIVO:OUTLIER, remove = TRUE) %>%
+    unite("NOME", TIPO_CONSTRUTIVO:OUTLIER, remove = TRUE, sep = " ") %>%
     unite("CODIGO", INDICE, NOME, remove = TRUE, sep="=") %>%
-    mutate(CODIGO=paste("@ITEM=", CODIGO, sep = ""))
+    mutate(CODIGO=paste("@ITEM=", gsub(" FALSE| TE", "", CODIGO), sep = ""))
   write.table(codigos,
               file = arquivo,
               sep = "",
@@ -20,11 +20,6 @@ gera_preambulo <- function(arquivo, tipos) {
               row.names = FALSE,
               quote = FALSE,
               append=TRUE)
-  fileConn<-file(arquivo, "a")
-  writeLines(c("@ITEM=102=APARTAMENTO","@ITEM=103=BARRACAO","@ITEM=104=CASA",
-               "@ITEM=105=GALPAO","@ITEM=106=LOJA","@ITEM=107=SALA",
-               "@ITEM=108=VAGA DE GARAGEM"), fileConn)
-  close(fileConn)
 }
 
 
@@ -37,7 +32,7 @@ le_outliers <- function(regional) {
 gera_item_set <- function(regional, indices, tabela) {
   rbind(
     tabela %>%
-      filter(REGIONAL == regional) %>%
+      filter(REGIONAL == regional, CEP > 0) %>%
       anti_join(le_outliers(regional)) %>%
       inner_join(indices) %>%
       group_by(CEP) %>%
@@ -47,13 +42,48 @@ gera_item_set <- function(regional, indices, tabela) {
       select(ITEMSET)
     ,
     tabela %>%
-      filter(REGIONAL == regional) %>%
+      filter(REGIONAL == regional, CEP == 0) %>%
       inner_join(indices) %>%
       group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, .groups = "drop") %>%
       summarise(
         ITEMSET = paste0(unique(INDICE), collapse = " "),
         , .groups = 'drop') %>% 
       select(ITEMSET)
+  )  
+}
+
+gera_item_set_conta <- function(regional, indices, tabela) {
+  rbind(
+    tabela %>%
+      filter(REGIONAL == regional, CEP > 0) %>%
+      anti_join(le_outliers(regional)) %>%
+      inner_join(indices) %>%
+      group_by(CEP, INDICE) %>%
+      summarise(
+        TOTAL = n(),
+        .groups = 'drop') %>% 
+      group_by(CEP) %>%
+      summarise(
+        ITEMSET = paste0(INDICE, collapse = " "),
+        TOTAL_ITEMSET = sum(TOTAL),
+        TOTAL_DESC = paste0(TOTAL, collapse = " "),
+        .groups = 'drop') %>%
+      select(ITEMSET, TOTAL_ITEMSET, TOTAL_DESC)
+    ,
+    tabela %>%
+      filter(REGIONAL == regional, CEP == 0) %>%
+      inner_join(indices) %>%
+      group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, INDICE) %>%
+      summarise(
+        TOTAL = n(),
+        .groups = 'drop') %>% 
+      group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO) %>%
+      summarise(
+        ITEMSET = paste0(INDICE, collapse = " "),
+        TOTAL_ITEMSET = sum(TOTAL),
+        TOTAL_DESC = paste0(TOTAL, collapse = " "),
+        .groups = 'drop') %>%
+      select(ITEMSET, TOTAL_ITEMSET, TOTAL_DESC)
   )  
 }
 
@@ -64,25 +94,25 @@ gera_utilidade_positiva <- function(regional, indices, tabela) {
       anti_join(le_outliers(regional)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
-      summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
+      summarise(TOTAL = round(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
       group_by(CEP) %>%
       summarise(
         ITEMSET = paste0(INDICE, collapse = " "),
-        UTILIDADE_TOTAL = as.integer(sum(TOTAL)),
-        UTILIDADE=paste0(as.integer(TOTAL), collapse = " "),
+        UTILIDADE_TOTAL = sum(TOTAL),
+        UTILIDADE=paste0(TOTAL, collapse = " "),
         .groups = 'drop') %>% 
       select(ITEMSET, UTILIDADE_TOTAL, UTILIDADE)
     ,
     tabela %>%
       filter(REGIONAL == regional & CEP == 0 & AREA_CONSTRUCAO > 0) %>%
       inner_join(indices) %>%
-      group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, INDICE, .groups = "drop") %>%
-      summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
+      group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, INDICE) %>%
+      summarise(TOTAL = round(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
       group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, .groups = "drop") %>%
       summarise(
         ITEMSET = paste0(INDICE, collapse = " "),
-        UTILIDADE_TOTAL = as.integer(sum(TOTAL)),
-        UTILIDADE=paste0(as.integer(TOTAL), collapse = " "),
+        UTILIDADE_TOTAL = sum(TOTAL),
+        UTILIDADE=paste0(TOTAL, collapse = " "),
         , .groups = 'drop') %>% 
       select(ITEMSET, UTILIDADE_TOTAL, UTILIDADE)
   )  
@@ -96,12 +126,12 @@ gera_utilidade_negativa <- function(regional, indices, tabela) {
       mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO, AREA_CONSTRUCAO)) %>%
       inner_join(indices) %>%
       group_by(CEP, INDICE) %>%
-      summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
+      summarise(TOTAL = round(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
       group_by(CEP) %>%
       summarise(
         ITEMSET = paste0(INDICE, collapse = " "),
-        UTILIDADE_TOTAL = as.integer(sum(TOTAL)),
-        UTILIDADE=paste0(as.integer(TOTAL), collapse = " "),
+        UTILIDADE_TOTAL = sum(TOTAL),
+        UTILIDADE=paste0(TOTAL, collapse = " "),
         .groups = 'drop') %>% 
       select(ITEMSET, UTILIDADE_TOTAL, UTILIDADE)
     ,
@@ -110,12 +140,12 @@ gera_utilidade_negativa <- function(regional, indices, tabela) {
       mutate(AREA_CONSTRUCAO = ifelse(AREA_CONSTRUCAO == 0,-AREA_TERRENO, AREA_CONSTRUCAO)) %>%
       inner_join(indices) %>%
       group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, INDICE, .groups = "drop") %>%
-      summarise(TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
+      summarise(TOTAL = round(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
       group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO, .groups = "drop") %>%
       summarise(
         ITEMSET = paste0(INDICE, collapse = " "),
-        UTILIDADE_TOTAL = as.integer(sum(TOTAL)),
-        UTILIDADE=paste0(as.integer(TOTAL), collapse = " "),
+        UTILIDADE_TOTAL = sum(TOTAL),
+        UTILIDADE=paste0(TOTAL, collapse = " "),
         , .groups = 'drop') %>% 
       select(ITEMSET, UTILIDADE_TOTAL, UTILIDADE)
   )  
@@ -131,12 +161,12 @@ gera_utilidade_sequencial <- function(regional, indices, tabela) {
       TIPO_CONSTRUTIVO,
       PADRAO_ACABAMENTO,
       OUTLIER, .groups = 'drop') %>%
-    summarise(AREA_CONSTRUCAO=sum(round(AREA_CONSTRUCAO)), .groups = 'drop') %>%
+    summarise(AREA_CONSTRUCAO=round(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
     inner_join(indices) %>%
     group_by(TIPO_LOGRADOURO, NOME_LOGRADOURO) %>%
     summarise(
       ITEM_SET = gera_transacao_utilidade(INDICE, AREA_CONSTRUCAO),
-      UTILIDADE_TOTAL = as.integer(sum(AREA_CONSTRUCAO)), .groups = 'drop') %>%
+      UTILIDADE_TOTAL = sum(AREA_CONSTRUCAO), .groups = 'drop') %>%
     select(ITEM_SET, UTILIDADE_TOTAL)
   
 }
@@ -159,7 +189,7 @@ gera_transacao_utilidade <- function(item, utilidade, n = 5) {
   return(paste(paste(transacao, collapse = ' '), ' -2', collapse = '' ))
 }
 
-grava_arquivo_spmf <- function(arquivo, tipos, dados, sep = ':', gera_preambulo=TRUE) {
+grava_arquivo_spmf <- function(arquivo, tipos, dados, sep = ':', gera_preambulo=FALSE) {
   if (gera_preambulo ) {
     gera_preambulo(arquivo, tipos)
   }
