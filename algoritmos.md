@@ -21,7 +21,7 @@ Para analizar esta base o algoritmo FPMax foi utilizado para obter as representa
 |Barreiro   |CASA P2, CASA P3, CASA P1   |     810|
 |Nordeste   |CASA P2, LOTE VAGO          |     703|
 |Nordeste   |CASA P3, LOTE VAGO          |     723|
-|Nordeste   |CASA P3, CASA P2, CASA P1   |     866|
+|Nordeste   |CASA P2, CASA P3, CASA P1   |     866|
 |Leste      |LOJA P2                     |     401|
 |Leste      |LOJA P3                     |     402|
 |Leste      |CASA P2, BARRACÃO P2        |     409|
