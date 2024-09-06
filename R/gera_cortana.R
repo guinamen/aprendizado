@@ -38,8 +38,8 @@ gera_cortana <- function(regional, tabela, arquivo) {
         AREA_CONSTRUCAO)) %>%
     group_by(X,Y) %>%
     summarise(
-      AREA_TERRENO=first(AREA_TERRENO),
-      AREA_CONSTRUCAO=max(AREA_CONSTRUCAO),
+      AREA_TERRENO=log10(mean(AREA_TERRENO)),
+      AREA_CONSTRUCAO=log10(max(AREA_CONSTRUCAO)),
       TIPO_CONSTRUTIVO=max(TIPO_CONSTRUTIVO),
       PADRAO_ACABAMENTO=max(PADRAO_ACABAMENTO),
       .groups = 'drop')
