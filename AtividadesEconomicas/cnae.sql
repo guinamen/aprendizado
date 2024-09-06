@@ -1,3 +1,17 @@
+CREATE TABLE "cnae_classe" (
+	"nome"	TEXT NOT NULL,
+	"descricao"	TEXT NOT NULL,
+	PRIMARY KEY("nome")
+);
+
+CREATE TABLE "cnae_relacao" (
+	"classe"	TEXT NOT NULL,
+	"subclasse"	TEXT NOT NULL,
+	FOREIGN KEY("subclasse") REFERENCES "cnae_classe"("nome"),
+	FOREIGN KEY("classe") REFERENCES "cnae_classe"("nome"),
+	PRIMARY KEY("classe","subclasse")
+);
+
 DELETE FROM cnae_classe;
 insert into cnae_classe values('A','AGRICULTURA, PECUÁRIA, PRODUÇÃO FLORESTAL, PESCA E AQÜICULTURA');
 insert into cnae_classe values('01','AGRICULTURA, PECUÁRIA E SERVIÇOS RELACIONADOS');
