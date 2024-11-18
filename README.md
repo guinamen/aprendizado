@@ -62,6 +62,7 @@
 - [Algoritmo FHMFreq (Itemset frequente de alta utilidade)](FHMFreq.md)
 - [Algoritmo FHN (Itemset de alta utilidade podendo ter valores negativos)](FHN.md)
 - [Algoritmo MFFI-Miner (Fuzzy Itemset de alta frequencia)](fuzzy.md)
+- [Algoritmo DBSCAN (Density-based spatial clustering of applications with noise)](cluster.md)
 - [Cortana (Busca por subgrupos - Apartamento)](subgrupo.md)
 - [Cortana (Busca por subgrupos - Imóveis de Alto Padrão)](subgrupo_p5.md)
 - [Descrição do ChatGPT](chat-gpt.md)
