@@ -10,11 +10,11 @@ Parâmetros usados: eps = 0.17 e MinPts = 5
 
 ## Bairros
 
-|  Cluster | Bairros |
-|---|---|
-|  1 | Sion, Belvedere, Marçola, Comiteco, Mangabeiras, Serra, Carmo, Anchieta e Cruzeiro |
-|  2 | Cidade Jardim, Santo Agostinho, Savassi, Santo Antônio, Lourdes e São Pedro |
-|  3 | Belvedere, São Bento, Coração de Jesus, Mangabeiras, Santa Lúcia e Vila Paris |
-|  4 | Funcionários, Savassi, Serra, Santa Efigênia, Cruzeiro |
-|  5 | Boa Viagem, Lourdes |
-|  6 | Luxemburgo, Vila Paris |
+|  Cluster | Bairros | Total de Imóveis |
+|---|---|---|
+|  1 | Sion, Belvedere, Marçola, Comiteco, Mangabeiras, Serra, Carmo, Anchieta e Cruzeiro | 2.776 |
+|  2 | Cidade Jardim, Santo Agostinho, Savassi, Santo Antônio, Lourdes e São Pedro | 4.972 |
+|  3 | Belvedere, São Bento, Coração de Jesus, Mangabeiras, Santa Lúcia e Vila Paris | 2.771 |
+|  4 | Funcionários, Savassi, Serra, Santa Efigênia, Cruzeiro | 2078 |
+|  5 | Boa Viagem, Lourdes | 75 |
+|  6 | Luxemburgo, Vila Paris | 219 |
