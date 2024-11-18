@@ -7,3 +7,14 @@ Parâmetros usados: eps = 0.17 e MinPts = 5
 
 ## Mapa
 ![alt Perfil por Regionais](https://raw.githubusercontent.com/guinamen/aprendizado/main/Imagens/cluster.png)
+
+## Bairros
+
+|  Cluster | Bairros |
+|---|---|
+|  1 | Sion, Belvedere, Marçola, Comiteco, Mangabeiras, Serra, Carmo, Anchieta e Cruzeiro |
+|  2 | Cidade Jardim, Santo Agostinho, Savassi, Santo Antônio, Lourdes e São Pedro |
+|  3 | Belvedere, São Bento, Coração de Jesus, Mangabeiras, Santa Lúcia e Vila Paris |
+|  4 | Funcionários, Savassi, Serra, Santa Efigênia, Cruzeiro |
+|  5 | Boa Viagem, Lourdes |
+|  6 | Luxemburgo, Vila Paris |
